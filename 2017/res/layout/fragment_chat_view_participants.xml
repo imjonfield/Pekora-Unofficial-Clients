@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mainToolbarHeight">
+        <View
+            android:id="@id/shadow_top"
+            android:background="@drawable/chat_shadow_blue"
+            android:layout_width="5.0dip"
+            android:layout_height="@dimen/mainToolbarHeight" />
+        <include
+            android:id="@id/toolbar_chat"
+            layout="@layout/toolbar_include" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/chatWhite"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <View
+            android:id="@id/shadow_center"
+            android:background="@drawable/chat_shadow_white"
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent" />
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ListView
+                android:id="@id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:listSelector="@drawable/contact_selector"
+                android:divider="@null" />
+            <include
+                android:id="@id/connecting_banner"
+                layout="@layout/connecting_banner" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

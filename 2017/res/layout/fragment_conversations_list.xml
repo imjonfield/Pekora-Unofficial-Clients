@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            android:id="@id/toolbar_chatlist"
+            layout="@layout/toolbar_include" />
+        <FrameLayout
+            android:id="@id/list_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/chat_list_container"
+                android:background="@color/chatListBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <View
+                    android:background="@color/chatBackground"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip" />
+                <FrameLayout
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="52.0dip">
+                    <com.roblox.client.components.RbxTextView
+                        android:textSize="20.0sp"
+                        android:textColor="@color/chatPrimary"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@id/create_group_button"
+                        android:background="@drawable/chat_white_button"
+                        android:paddingTop="6.0dip"
+                        android:paddingBottom="6.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Feature_Chat_Label_CreateChatGroup"
+                        style="@style/Theme.Roblox.StandardFontRegular" />
+                </FrameLayout>
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@id/swipeContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <ListView
+                        android:id="@id/list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/contact_selector"
+                        android:divider="@null" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@id/chat_list_empty"
+                android:background="@color/chatBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <com.roblox.client.components.RbxTextView
+                    android:textSize="16.0sp"
+                    android:id="@id/chat_start_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Feature_Chat_Label_MakeFriendsChat"
+                    android:layout_centerInParent="true"
+                    style="@style/Theme.Roblox.StandardFontRegular" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:src="@drawable/symbol_friends"
+                    android:layout_above="@id/chat_start_hint"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <FrameLayout
+                android:id="@id/chat_list_loading"
+                android:background="@color/chatBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <include
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/chat_loading_squares" />
+            </FrameLayout>
+            <include
+                android:id="@id/connecting_banner"
+                layout="@layout/connecting_banner" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mainToolbarHeight">
+        <View
+            android:id="@id/chat_shadow_top"
+            android:background="@drawable/chat_shadow_blue"
+            android:layout_width="5.0dip"
+            android:layout_height="@dimen/mainToolbarHeight" />
+        <include
+            android:id="@id/toolbar_chat"
+            layout="@layout/toolbar_include" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/chat_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/input_container">
+        <View
+            android:id="@id/chat_shadow_center"
+            android:background="@drawable/chat_shadow_gray"
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent" />
+        <FrameLayout
+            android:background="@color/chatBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/symbol_chat_empty" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

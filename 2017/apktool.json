@@ -1,0 +1,41 @@
+{
+  "apkFileName": "Korone_2017_src_mod_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png",
+    "jpg",
+    "assets/fingerprint.txt"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-251224",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "2.311.156028",
+    "versionCode": "296"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {
+    "third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml": "8",
+    "third_party/java_src/error_prone/Annotations.gwt.xml": "8",
+    "NDK_LICENSES": "8",
+    "error_prone/Annotations.gwt.xml": "8",
+    "third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml": "8",
+    "jsr305_annotations/Jsr305_annotations.gwt.xml": "8",
+    "build-data.properties": "8"
+  },
+  "apkFilePath": "/storage/emulated/0/Podcasts/Korone_2017_src/Korone_2017_src_mod.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "16",
+    "targetSdkVersion": "24"
+  }
+}

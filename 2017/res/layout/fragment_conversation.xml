@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mainToolbarHeight">
+        <View
+            android:id="@id/chat_shadow_top"
+            android:background="@drawable/chat_shadow_blue"
+            android:layout_width="5.0dip"
+            android:layout_height="@dimen/mainToolbarHeight" />
+        <include
+            android:id="@id/toolbar_chat"
+            layout="@layout/toolbar_include" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/rename_chat_join_game_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/rename_chat_container"
+            android:background="@color/chatWhite"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@id/rename_chat_shadow"
+                android:background="@drawable/chat_shadow_white"
+                android:layout_width="5.0dip"
+                android:layout_height="fill_parent" />
+            <com.roblox.client.components.RbxChatEditText
+                android:textSize="16.0sp"
+                android:textColorHint="@color/chatSubText"
+                android:id="@id/rename_chat"
+                android:background="@null"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50.0dip"
+                android:maxLength="150"
+                android:layout_weight="1.0"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionDone"
+                android:textCursorDrawable="@null"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+            <com.roblox.client.components.RbxTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/chatWhite"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:id="@id/rename_button"
+                android:background="@drawable/chat_send_button"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:text="@string/CommonUI_Features_Action_Done"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/join_game_container"
+            android:background="@color/chatWhite"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
+            <View
+                android:id="@id/join_game_chat_shadow"
+                android:background="@drawable/chat_shadow_white"
+                android:layout_width="5.0dip"
+                android:layout_height="fill_parent" />
+            <ImageView
+                android:id="@id/game_icon"
+                android:background="@drawable/chat_join_game_image_border"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:weightSum="1.0">
+                <com.roblox.client.components.RbxTextView
+                    android:textColor="@color/RbxGray3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/Feature_Chat_Label_Playing"
+                    android:layout_weight="1.0"
+                    style="@style/Theme.Roblox.StandardFontRegular" />
+                <com.roblox.client.components.RbxTextView
+                    android:textColor="@color/RbxBlack"
+                    android:id="@id/game_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_weight="1.0"
+                    style="@style/Theme.Roblox.StandardFontRegular" />
+            </LinearLayout>
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_weight="0.9" />
+            <com.roblox.client.components.RbxTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/chatWhite"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:id="@id/join_button"
+                android:background="@drawable/chat_join_game_button"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="31.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:text="@string/Feature_Chat_Label_JoinGame"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:background="@color/chatWhite"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:id="@id/chat_list_loading"
+            android:background="@color/chatBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/input_container">
+            <include
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/chat_loading_squares" />
+        </FrameLayout>
+        <View
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/input_container"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <View
+                android:id="@id/chat_shadow_bottom"
+                android:background="@drawable/chat_shadow_white"
+                android:layout_width="5.0dip"
+                android:layout_height="fill_parent" />
+            <com.roblox.client.components.RbxChatEditText
+                android:textSize="16.0sp"
+                android:textColorHint="@color/chatSubText"
+                android:id="@id/message"
+                android:background="@null"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50.0dip"
+                android:maxLines="3"
+                android:layout_weight="1.0"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textCursorDrawable="@null"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+            <com.roblox.client.components.RbxTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/chatWhite"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:id="@id/send_button"
+                android:background="@drawable/chat_send_button"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:text="@string/Feature_Chat_Label_Send"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/chat_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/input_container">
+            <View
+                android:id="@id/chat_shadow_center"
+                android:background="@drawable/chat_shadow_gray"
+                android:layout_width="5.0dip"
+                android:layout_height="fill_parent" />
+            <ListView
+                android:id="@id/list"
+                android:background="@color/chatBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stackFromBottom="true"
+                android:transcriptMode="normal"
+                android:divider="@null" />
+        </LinearLayout>
+        <include
+            android:id="@id/connecting_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/connecting_banner" />
+        <com.roblox.client.components.RbxTextView
+            android:textColor="@color/chatWhite"
+            android:id="@id/new_chats_available"
+            android:background="@drawable/rounded_square_shape_blue"
+            android:paddingLeft="16.0dip"
+            android:paddingTop="4.0dip"
+            android:paddingRight="16.0dip"
+            android:paddingBottom="4.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/Feature_Chat_Label_NewChats"
+            android:layout_alignBottom="@id/chat_container"
+            android:layout_centerHorizontal="true"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+    </RelativeLayout>
+</LinearLayout>

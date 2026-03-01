@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="@dimen/typingProgressDotExpandSize"
+        android:layout_height="@dimen/typingProgressDotExpandSize">
+        <View
+            android:layout_gravity="center"
+            android:id="@id/loading_squares_1"
+            android:background="@drawable/circle_shape_darkgray"
+            android:layout_width="@dimen/typingProgressDotSize"
+            android:layout_height="@dimen/typingProgressDotSize" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="@dimen/typingProgressDotExpandSize"
+        android:layout_height="@dimen/typingProgressDotExpandSize"
+        android:layout_marginLeft="10.0dip">
+        <View
+            android:layout_gravity="center"
+            android:id="@id/loading_squares_2"
+            android:background="@drawable/circle_shape_darkgray"
+            android:layout_width="@dimen/typingProgressDotSize"
+            android:layout_height="@dimen/typingProgressDotSize" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="@dimen/typingProgressDotExpandSize"
+        android:layout_height="@dimen/typingProgressDotExpandSize"
+        android:layout_marginLeft="20.0dip">
+        <View
+            android:layout_gravity="center"
+            android:id="@id/loading_squares_3"
+            android:background="@drawable/circle_shape_darkgray"
+            android:layout_width="@dimen/typingProgressDotSize"
+            android:layout_height="@dimen/typingProgressDotSize" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="1.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:background="@color/white"
+        android:layout_width="65.0dip"
+        android:layout_height="fill_parent" />
+    <View
+        android:background="@color/chatBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

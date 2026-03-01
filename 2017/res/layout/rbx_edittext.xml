@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/tableWrapper"
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:textSize="@dimen/rbxEditTextInternal"
+        android:id="@id/rbxEditTextTextBox"
+        android:background="@drawable/rbx_bg_flat_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="1.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:maxLines="1"
+        android:layout_weight="55.0" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/rbxEditTextBottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="25.0">
+        <TextView
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/rbxEditTextHint"
+            android:id="@id/rbxEditTextBottomLabel"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

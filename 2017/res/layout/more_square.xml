@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@drawable/more_page_item_selector"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@id/imageview_more_square"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:id="@id/textview_more_square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+    </LinearLayout>
+    <TextView
+        android:textSize="10.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center|right"
+        android:id="@id/textview_more_square_notification"
+        android:background="@drawable/circle_shape_red"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20.0dip"
+        android:minWidth="20.0dip"
+        android:minHeight="20.0dip" />
+</FrameLayout>

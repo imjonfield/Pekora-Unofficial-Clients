@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/rbx_bg_card_shadow"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="18.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12.0dip"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18.0sp"
+                android:textColor="@color/RbxBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Authentication_SignUp_Label_CreateYourAccount"
+                style="@style/Theme.Roblox.StandardFontBold" />
+            <com.roblox.client.signup.UsernameSignUpEditText
+                android:id="@id/sign_up_multiscreen_username_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginTop="12.0dip"
+                android:layout_weight="1.0"
+                app:hintText="Username (not your real name)"
+                app:errorText="Username contains invalid characters"
+                app:hintTextLong="Username (6-20 characters, no spaces)"
+                app:inputType="textNoSuggestions"
+                style="@style/Theme.Roblox.EditText" />
+            <com.roblox.client.components.RbxEditText
+                android:id="@id/sign_up_multiscreen_password_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1.0"
+                app:hintText="Password"
+                app:hintTextLong="Password (4 letters and 2 numbers min.)"
+                app:inputType="password"
+                style="@style/Theme.Roblox.EditText" />
+            <com.roblox.client.components.RbxEditText
+                android:id="@id/sign_up_multiscreen_password_verify_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1.0"
+                app:hintText="Confirm password"
+                app:errorText="Passwords do not match"
+                app:inputType="password"
+                style="@style/Theme.Roblox.EditText" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.roblox.client.components.RbxButton
+        android:textSize="20.0sp"
+        android:id="@id/sign_up_account_next_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/Authentication_SignUp_Action_NextWord"
+        style="@style/Theme.Roblox.Button.Flat.Blue" />
+</LinearLayout>

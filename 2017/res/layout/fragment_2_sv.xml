@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="5.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0">
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/Authentication_2SV_Label_TwoStepVerification"
+            style="Theme.Roblox.StandardFontRegular" />
+        <ImageView
+            android:id="@id/imageview_2sv_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:src="@drawable/two_step_verification_logo_email"
+            android:layout_weight="2.0"
+            android:contentDescription="@string/Authentication_2SV_Label_TwoStepVerification" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/textview_2sv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_2SV_Label_EnterEmailCode"
+            style="Theme.Roblox.StandardFontRegular" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="16.0sp"
+            android:textColor="@color/RbxGray7"
+            android:textColorHint="@color/RbxGray7"
+            android:id="@id/edittext_verify_code"
+            android:background="@drawable/edit_red_border"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:hint="@string/Authentication_2SV_Label_EnterCode"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            style="Theme.Roblox.StandardFontRegular" />
+        <TextView
+            android:textColor="@color/RbxRed1"
+            android:id="@id/textview_incorrect_code_signal"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_2SV_Response_TwoStepEmptyCode" />
+        <com.roblox.client.components.RbxProgressButton
+            android:id="@id/button_verify_code"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:contentDescription="@string/Authentication_2SV_Label_TwoStepVerification"
+            app:defButtonText="@string/Authentication_2SV_Action_Verify"
+            app:progressTextSize="16.0sp"
+            app:buttonTextSize="16.0sp"
+            style="@style/Theme.Roblox.Progress.Button.Green" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:textSize="16.0sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/checkbox_2sv_trust_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_2SV_Label_TrustThisDevice"
+            app:buttonTint="@color/RbxGreen2"
+            style="Theme.Roblox.StandardFontRegular" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/blueRobloxSupport"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/textview_2sv_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/Authentication_2SV_Action_ResendCode"
+            style="Theme.Roblox.StandardFontRegular" />
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip">
+            <TextView
+                android:textSize="14.0sp"
+                android:id="@id/textview_2sv_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="Theme.Roblox.StandardFontRegular" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

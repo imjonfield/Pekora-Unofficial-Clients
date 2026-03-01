@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/container"
+    android:padding="24.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="450.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Authentication_Captcha_Label_VerifyHuman" />
+    <FrameLayout
+        android:background="@drawable/rbx_bg_flat_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:layout_marginTop="20.0dip">
+        <android.lib.recaptcha.ReCaptcha
+            android:id="@id/recaptcha"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+        <ProgressBar
+            android:id="@id/progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:indeterminate="true"
+            style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+    <View
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0.0px"
+        android:layout_height="0.0px" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@id/captcha_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+        <EditText
+            android:id="@id/captcha_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Authentication_Captcha_Description_CaptchaHint"
+            android:maxLines="1"
+            android:inputType="textVisiblePassword" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="0.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip">
+        <Button
+            android:textSize="16.0dip"
+            android:id="@id/verify"
+            android:padding="8.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:text="@string/Authentication_Captcha_Action_Submit"
+            android:layout_weight="1.0" />
+        <Button
+            android:textSize="16.0dip"
+            android:id="@id/reload"
+            android:padding="8.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:text="@string/Authentication_Captcha_Action_Reload"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">இயக்கு</string>
+    <string name="common_google_play_services_enable_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_enable_title">Google Play சேவைகளை இயக்கவும்</string>
+    <string name="common_google_play_services_install_button">Google Play சேவைகளைப் பெறுக</string>
+    <string name="common_google_play_services_install_text_phone">Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும். அவை தற்போது உங்கள் மொபைலில் இல்லை.</string>
+    <string name="common_google_play_services_install_text_tablet">Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும். அவை தற்போது உங்கள் டேப்லெட்டில் இல்லை.</string>
+    <string name="common_google_play_services_install_title">Google Play சேவைகளைப் பெறவும்</string>
+    <string name="common_google_play_services_notification_ticker">Google Play சேவைகள் பிழை</string>
+    <string name="common_google_play_services_unknown_issue">%1$sக்கு Google Play சேவைகளுடன் சிக்கல் உள்ளது. சிக்கல் தொடர்ந்தால், உதவிக்கு டெவெலப்பரைத் தொடர்புகொள்ளவும்.</string>
+    <string name="common_google_play_services_unsupported_text">சாதனம் ஆதரிக்காத Google Play சேவைகளை %1$s சார்ந்துள்ளது. உதவிக்கு, தயாரிப்பாளரைத் தொடர்புகொள்ளவும்.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play சேவைகள்</string>
+    <string name="common_google_play_services_update_button">புதுப்பி</string>
+    <string name="common_google_play_services_update_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_update_title">Google Play சேவைகளைப் புதுப்பிக்கவும்</string>
+    <string name="common_google_play_services_updating_text">தற்போது புதுப்பிக்கப்படும், Google Play சேவைகள் இருந்தால் மட்டுமே, %1$s செயல்படும்.</string>
+    <string name="common_google_play_services_updating_title">Google Play சேவைகளைப் புதுப்பிக்கிறது</string>
+    <string name="common_google_play_services_wear_update_text">Google Play சேவைகளின் புதிய பதிப்பு தேவை. அது விரைவில் தானாகவே புதுப்பிக்கப்படும்.</string>
+    <string name="common_open_on_phone">மொபைலில் திற</string>
+    <string name="common_signin_button_text">உள்நுழைக</string>
+    <string name="common_signin_button_text_long">Google மூலம் உள்நுழைக</string>
+</resources>

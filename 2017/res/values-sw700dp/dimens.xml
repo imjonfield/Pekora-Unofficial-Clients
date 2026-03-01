@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emailAlert">16.0sp</dimen>
+    <dimen name="rbxEditTextHint">16.0sp</dimen>
+    <dimen name="rbxEditTextInternal">22.0sp</dimen>
+    <dimen name="settingsAlertIconLeftMargin">8.0dip</dimen>
+    <dimen name="splashLoadingTextSize">40.0sp</dimen>
+    <dimen name="textSizeLoginFinePrint">18.0sp</dimen>
+    <dimen name="textSizeSignupFinePrint">16.0sp</dimen>
+    <dimen name="textSizeSignupHeader">30.0sp</dimen>
+    <dimen name="textSizeSignupLogin">19.0sp</dimen>
+    <dimen name="alertIconHeight">35.0dip</dimen>
+    <dimen name="landingButtonHeight">60.0dip</dimen>
+    <dimen name="settingsIconHeight">28.0dip</dimen>
+    <dimen name="textSizeBtnSubmitProgress">20.0sp</dimen>
+    <dimen name="textSizeCreateUsernameChoose">29.0sp</dimen>
+    <dimen name="textSizeCreateUsernameHeader">32.0sp</dimen>
+</resources>

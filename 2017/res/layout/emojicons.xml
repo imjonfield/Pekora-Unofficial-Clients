@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/keyboard_background_holo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/emojis_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentTop="true">
+        <ImageButton
+            android:id="@id/emojis_tab_0_recents"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_emoji_recent_light"
+            android:scaleType="center"
+            android:layout_weight="1.0" />
+        <View
+            android:background="@color/horizontal_vertical"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@id/emojis_tab_1_people"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_emoji_people_light"
+            android:scaleType="center"
+            android:layout_weight="1.0" />
+        <View
+            android:background="@color/horizontal_vertical"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@id/emojis_tab_2_nature"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_emoji_nature_light"
+            android:scaleType="center"
+            android:layout_weight="1.0" />
+        <View
+            android:background="@color/horizontal_vertical"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@id/emojis_tab_3_objects"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_emoji_objects_light"
+            android:scaleType="center"
+            android:layout_weight="1.0" />
+        <View
+            android:background="@color/horizontal_vertical"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@id/emojis_tab_4_cars"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_emoji_places_light"
+            android:scaleType="center"
+            android:layout_weight="1.0" />
+        <View
+            android:background="@color/horizontal_vertical"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@id/emojis_tab_5_punctuation"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_emoji_symbols_light"
+            android:scaleType="center"
+            android:layout_weight="1.0" />
+        <View
+            android:background="@color/horizontal_vertical"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@id/emojis_backspace"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/sym_keyboard_delete_holo_dark"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@id/emojis_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emojis_tab"
+        android:layout_alignParentBottom="true" />
+    <View
+        android:background="@color/horizontal_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/emojis_tab" />
+</RelativeLayout>

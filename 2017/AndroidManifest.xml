@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.roblox.clientc"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission
+        android:name="com.roblox.clientc.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.roblox.clientc.permission.C2D_MESSAGE" />
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:requiresSmallestWidthDp="300" />
+    <uses-permission
+        android:name="disabled_com.android.vending.BILLING" />
+    <!-- Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- Allows the app to view information about network connections such as which networks exist and are connected. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Allows the app to retrieve information about currently and recently running tasks. This may allow the app to discover information about which applications are used on the device. -->
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+    <!-- Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="disabled_android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="disabled_android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.type.pc"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-permission
+        android:name="com.roblox.clientc_com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Allows the app to prevent the phone from going to sleep. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:theme="@style/Theme.Roblox.Fullscreen"
+        android:label="Korone (2017)"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.roblox.client.RobloxApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:resizeableActivity="true">
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category
+                    android:name="com.roblox.client.gcm" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.roblox.client.gcm.RbxGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.roblox.client.gcm.RbxInstanceIdListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.roblox.client.gcm.RegistrationIntentService"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="7991889011d53be5ccf9f6f42d9a1ea05a702eb7" />
+        <receiver
+            android:name="com.roblox.client.pushnotification.notificationreceivers.FriendRequestReceivedNotificationReceiver">
+            <intent-filter>
+                <action
+                    android:name="friend_request_received" />
+                <action
+                    android:name="friend_request_received_ignored" />
+                <action
+                    android:name="friend_request_received_accepted" />
+                <action
+                    android:name="friend_request_received_cleared" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.roblox.client.pushnotification.notificationreceivers.FriendRequestAcceptedNotificationReceiver">
+            <intent-filter>
+                <action
+                    android:name="friend_request_accepted" />
+                <action
+                    android:name="friend_request_accepted_cleared" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.roblox.client.pushnotification.notificationreceivers.ChatMessageNotificationReceiver">
+            <intent-filter>
+                <action
+                    android:name="chat_message_received" />
+                <action
+                    android:name="chat_message_cleared" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.roblox.client.pushnotification.notificationreceivers.PrivateMessageReceivedNotificationReceiver">
+            <intent-filter>
+                <action
+                    android:name="private_message_received" />
+                <action
+                    android:name="private_message_received_cleared" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.roblox.client.RobloxService"
+            android:exported="false"
+            android:stopWithTask="false" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:label="Korone (2017)"
+            android:name="com.roblox.client.landing.ActivityStartMVP"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:label="Korone (2017)"
+            android:name="com.roblox.client.landing.ActivityStart"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:label="Korone (2017)"
+            android:name="com.roblox.client.ActivitySplash"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.roblox.client.ActivityProtocolLaunch"
+            android:noHistory="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="robloxmobile" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:label="Korone (2017)"
+            android:name="com.roblox.client.ActivityNativeMain"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Roblox.Dark.Fullscreen"
+            android:label="Korone (2017)"
+            android:name="com.roblox.client.ActivityGlView"
+            android:process=":glview"
+            android:launchMode="standard"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Roblox.Fullscreen"
+            android:label="Korone (2017)"
+            android:name="com.roblox.client.ActivityCurlTest"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.roblox.client.test.TestHelperActivity" />
+        <activity
+            android:theme="@style/Theme.Roblox.AppCompat.Light.Dialog.NoActionBar"
+            android:label="@string/Authentication_Captcha_Heading_CaptchaTitle"
+            android:name="com.roblox.client.ReCaptchaActivity" />
+        <service
+            android:name="com.roblox.client.realtime.RealtimeService" />
+        <activity
+            android:theme="@style/Theme.Roblox.AppCompat.Dialog.NoActionBar"
+            android:name="com.roblox.client.game.GameLaunchActivity"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:name="com.roblox.client.RobloxWebActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:name="com.roblox.client.NotificationStreamActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:name="com.roblox.client.OverlayActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:name="com.roblox.client.chat.ConversationActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:name="com.roblox.client.signup.multiscreen_sign_up.ActivityMultiScreenSignUp"
+            android:configChanges="orientation|screenSize"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/Theme.Roblox"
+            android:name="com.roblox.client.signup.ActivitySignUp"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+        <activity
+            android:theme="@style/Theme.IAPTheme"
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category
+                    android:name="com.roblox.client" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter
+                android:priority="-500">
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.roblox.clientc.firebaseinitprovider"
+            android:initOrder="100" />
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="1" />
+    </application>
+</manifest>
