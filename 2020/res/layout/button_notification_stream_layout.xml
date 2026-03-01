@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/RbxTransparent"
+    android:layout_width="44.0dip"
+    android:layout_height="@dimen/mainToolbarHeight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center|left"
+        android:id="@id/notification_button"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginLeft="2.0dip"
+        android:src="@drawable/topbar_ic_notification_light" />
+    <TextView
+        android:textSize="10.0dip"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:layout_gravity="center|left"
+        android:id="@id/notification_count"
+        android:background="@drawable/stream_label_light"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="-8.0dip"
+        android:minWidth="20.0dip"
+        android:minHeight="20.0dip"
+        android:text="@string/Notifications_NotificationStream_Label_NotificationStreamCount" />
+</FrameLayout>

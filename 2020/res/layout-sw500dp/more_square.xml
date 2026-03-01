@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/RbxGray5"
+    android:paddingLeft="@dimen/morePageListPaddingLeft"
+    android:paddingRight="@dimen/morePageListPaddingRight"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@id/more_square_click_frame"
+        android:background="@drawable/more_page_item_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_gravity="left"
+            android:background="@color/chatBackground"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="25.0dip" />
+            <ImageView
+                android:id="@id/imageview_more_square"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:id="@id/textview_more_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+        </LinearLayout>
+        <TextView
+            android:textSize="10.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center|right"
+            android:id="@id/textview_more_square_notification"
+            android:background="@drawable/circle_shape_red"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:minWidth="20.0dip"
+            android:minHeight="20.0dip" />
+        <View
+            android:layout_gravity="right"
+            android:background="@color/chatBackground"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

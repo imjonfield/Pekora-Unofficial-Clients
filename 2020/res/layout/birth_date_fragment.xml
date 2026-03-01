@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/birthdate"
+    android:background="@color/activityBackground"
+    android:paddingLeft="20.0dip"
+    android:paddingTop="10.0dip"
+    android:paddingRight="20.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingStart="20.0dip"
+    android:paddingEnd="20.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxTextView
+        android:textSize="@dimen/textSizeSignupHeader"
+        android:textStyle="bold"
+        android:textColor="@color/RbxBlack"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/fragment_sign_up_birth_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Authentication_SignUp_Label_CreateAccount" />
+    <com.roblox.client.components.RbxBirthdayPicker
+        android:id="@id/fragment_sign_up_birthday_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:layout_marginTop="30.0dip"
+        style="@style/Theme.Roblox.StandardFontLight" />
+    <com.roblox.client.components.RbxButton
+        android:textSize="@dimen/textSizeBtnSubmit"
+        android:id="@id/fragment_birth_date_continue_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="15.0dip"
+        android:text="@string/Authentication_SignUp_Label_Next"
+        style="@style/Theme.Roblox.Button.Flat.Blue" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip">
+        <com.roblox.client.components.RbxTextView
+            android:textSize="@dimen/textSizeLoginFinePrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_SignUp_Label_HaveAnAccountAlready" />
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeLoginFinePrint"
+            android:textColor="@color/RbxBlue2"
+            android:id="@id/fragment_sign_up_login_button"
+            android:background="@android:color/transparent"
+            android:paddingLeft="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_SignUp_Label_LogInText"
+            android:paddingStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/landing_layout"
+    android:background="@color/activityBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="7.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/landing_center_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="6.3">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@id/landing_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@id/landing_tab_dots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabBackground="@drawable/activity_start_tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0.0dip" />
+        <ImageButton
+            android:id="@id/about_button"
+            android:background="@android:color/transparent"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="11.0dip"
+            android:layout_marginTop="12.0dip"
+            android:src="@drawable/about_icon_grey"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11.0dip"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/landing_bottom_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:weightSum="1.0"
+        android:layout_weight="0.7">
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeBtnCancel"
+            android:layout_gravity="center"
+            android:id="@id/login_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            style="@style/Theme.Roblox.Button.Flat.White.Square.Corners" />
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeBtnCancel"
+            android:layout_gravity="center"
+            android:id="@id/signup_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            style="@style/Theme.Roblox.Button.Flat.Blue.Square.Corners" />
+    </LinearLayout>
+</LinearLayout>
