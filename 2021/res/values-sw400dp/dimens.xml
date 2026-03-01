@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alertIconHeight">33.0dip</dimen>
+    <dimen name="morePageSquareSide">120.0dip</dimen>
+    <dimen name="settingsAlertIconLeftMargin">10.0dip</dimen>
+    <dimen name="settingsIconHeight">25.0dip</dimen>
+    <dimen name="splashLoadingTextSize">40.0sp</dimen>
+    <dimen name="textSizeBtnSubmitProgress">17.0sp</dimen>
+    <dimen name="textSizeCreateUsernameChoose">25.0sp</dimen>
+    <dimen name="textSizeCreateUsernameHeader">28.0sp</dimen>
+    <dimen name="textSizeLoginFinePrint">20.0sp</dimen>
+    <dimen name="textSizeSignupHeader">26.0sp</dimen>
+    <dimen name="textSizeSignupFinePrint">15.0sp</dimen>
+    <dimen name="textSizeSignupLogin">20.0sp</dimen>
+</resources>

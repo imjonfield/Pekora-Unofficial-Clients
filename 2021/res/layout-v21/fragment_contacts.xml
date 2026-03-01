@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/activityBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@id/contacts_error_screen"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/contacts_error_screen" />
+    <include
+        android:id="@id/contacts_loading_screen"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/contacts_loading_screen" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/contacts_contacts_list"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.roblox.client.components.RbxSearchView
+            android:textSize="17.0sp"
+            android:id="@id/contacts_search_view"
+            android:background="@color/white"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/Features_FriendFinder_Label_SearchContacts"
+            android:queryBackground="@android:color/transparent" />
+        <TextView
+            android:background="@color/RbxGray8"
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/contacts_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

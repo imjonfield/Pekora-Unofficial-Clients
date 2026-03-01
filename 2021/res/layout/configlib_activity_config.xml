@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@id/connect_txt"
+        android:padding="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="Connect"
+        android:layout_marginStart="8.0dip"
+        app:layout_constraintBottom_toTopOf="@id/channel_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Spinner
+        android:id="@id/connect_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/connect_txt"
+        app:layout_constraintStart_toEndOf="@id/connect_txt" />
+    <Spinner
+        android:id="@id/channel_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/channel_label"
+        app:layout_constraintStart_toEndOf="@id/channel_label" />
+    <TextView
+        android:id="@id/channel_label"
+        android:padding="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="Client Channel"
+        app:layout_constraintStart_toStartOf="@id/connect_txt"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+    <Spinner
+        android:id="@id/base_url_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/base_url_label"
+        app:layout_constraintStart_toEndOf="@id/base_url_label" />
+    <TextView
+        android:id="@id/base_url_label"
+        android:padding="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="Base URL"
+        app:layout_constraintStart_toStartOf="@id/channel_label"
+        app:layout_constraintTop_toBottomOf="@id/channel_label" />
+    <View
+        android:id="@id/divider"
+        android:background="?android:listDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connect_txt" />
+    <Button
+        android:id="@id/local_settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="Edit Local Settings"
+        app:layout_constraintStart_toStartOf="@id/base_url_label"
+        app:layout_constraintTop_toBottomOf="@id/base_url_label" />
+    <Button
+        android:id="@id/user_agent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:text="Edit User Agent"
+        app:layout_constraintStart_toEndOf="@id/local_settings_button"
+        app:layout_constraintTop_toBottomOf="@id/base_url_label" />
+    <Button
+        android:id="@id/dev_rpc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:text="Lua Dev Server"
+        app:layout_constraintStart_toStartOf="@id/base_url_label"
+        app:layout_constraintTop_toBottomOf="@id/local_settings_button" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dev_rpc_button"
+        app:layout_constraintVertical_bias="1.0">
+        <TextView
+            android:id="@id/settings_json_text"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

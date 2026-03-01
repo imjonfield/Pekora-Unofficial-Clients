@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@id/instructions_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="@string/Configure_Devrpc_Instructions" />
+            <TextView
+                android:id="@id/current_config_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instructions_label" />
+            <TextView
+                android:id="@id/base_url_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="IP Address Override"
+                android:layout_below="@id/current_config_label" />
+            <EditText
+                android:id="@id/ip_address_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:hint="Your computer's IP from same WIFI"
+                android:layout_below="@id/base_url_label" />
+            <TextView
+                android:id="@id/base_api_url_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Port (No need to change, use default)"
+                android:layout_below="@id/ip_address_edit" />
+            <EditText
+                android:id="@id/port_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:hint="@string/Configure_Devrpc_Port_Hint"
+                android:layout_below="@id/base_api_url_label" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_below="@id/port_edit">
+                <Button
+                    android:id="@id/reset_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:layout_weight="1.0" />
+                <Button
+                    android:id="@id/save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

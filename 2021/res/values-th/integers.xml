@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fragment_sign_up_cancel_button_layout_weight">50</integer>
+    <integer name="fragment_sign_up_cancel_button_margin_left_layout_weight">3</integer>
+    <integer name="fragment_sign_up_sign_up_button_layout_weight">50</integer>
+    <integer name="fragment_sign_up_sign_up_button_margin_right_layout_weight">3</integer>
+    <integer name="fragment_sign_up_space_between_sign_up_cancel_buttons_layout_weight">4</integer>
+</resources>

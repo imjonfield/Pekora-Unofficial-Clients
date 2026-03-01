@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@id/mode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:text="JSON Edit Mode" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/setting_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/json_editor_container"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@id/save_local_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:text="@string/Config_LocalSettings_Action_SaveSettings" />
+                <ProgressBar
+                    android:id="@id/loading_progress_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.ProgressBar" />
+            </LinearLayout>
+            <EditText
+                android:textSize="12.0sp"
+                android:gravity="start|center|top"
+                android:id="@id/settings_json_text"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:hint="@string/Config_LocalSettings_Hint_EnterSettings"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:layout_weight="1.0"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

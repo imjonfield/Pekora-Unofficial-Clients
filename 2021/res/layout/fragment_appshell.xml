@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@id/retry_layout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            layout="@layout/splash_retry_button" />
+    </LinearLayout>
+    <com.roblox.client.RBXSurfaceView
+        android:id="@id/surfaceview"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <FrameLayout
+        android:id="@id/keyboard_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.roblox.client.RbxKeyboard
+            android:layout_gravity="top"
+            android:id="@id/gl_edit_text"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36.0dip"
+            android:ems="10">
+            <requestFocus />
+        </com.roblox.client.RbxKeyboard>
+    </FrameLayout>
+</FrameLayout>

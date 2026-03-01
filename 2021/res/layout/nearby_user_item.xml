@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:tag="layout/nearby_user_item_0"
+    android:padding="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/nearby_user_img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/nearby_user_img_view"
+            android:tag="binding_1"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/nearby_default_thumbnail"
+            android:layout_centerInParent="true"
+            app:civ_fill_color="@color/nearby_user_back_color" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/nearby_user_back_img_view"
+            android:tag="binding_2"
+            android:layout_width="65.0dip"
+            android:layout_height="65.0dip"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@id/nearby_add_friend_img_view"
+            android:tag="binding_3"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignRight="@id/nearby_user_back_img_view"
+            android:layout_alignBottom="@id/nearby_user_back_img_view"
+            android:layout_alignEnd="@id/nearby_user_back_img_view" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="@color/RbxBlack"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/nearby_username_text_view"
+        android:tag="binding_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="3.0dip"
+        android:layout_marginRight="8.0dip"
+        android:maxWidth="90.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nearby_user_img_layout" />
+    <TextView
+        android:textSize="12.0sp"
+        android:id="@id/nearby_user_status_text_view"
+        android:tag="binding_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nearby_username_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnFlatStdCornerRadius">3.0dip</dimen>
+    <dimen name="emailAlert">14.0sp</dimen>
+    <dimen name="nearbyTabLayoutEdgePadding">0.0dip</dimen>
+    <dimen name="settingsAlertIconLeftMargin">10.0dip</dimen>
+    <dimen name="textSizeLoginFinePrint">16.0sp</dimen>
+    <dimen name="textSizeSignupHeader">20.0sp</dimen>
+    <dimen name="textSizeSignupFinePrint">12.0sp</dimen>
+    <dimen name="textSizeSignupLogin">16.0sp</dimen>
+</resources>

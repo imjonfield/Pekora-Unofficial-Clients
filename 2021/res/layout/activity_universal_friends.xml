@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/universal_friend_tab_container"
+    android:background="@color/activityBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/universal_friends_toolbar_include"
+        layout="@layout/toolbar_include" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/universal_friends_tab_layout"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/nearbyTabLayoutEdgePadding"
+        android:paddingRight="@dimen/nearbyTabLayoutEdgePadding"
+        android:layout_width="fill_parent"
+        android:layout_height="95.0dip"
+        android:paddingStart="@dimen/nearbyTabLayoutEdgePadding"
+        android:paddingEnd="@dimen/nearbyTabLayoutEdgePadding"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabMaxWidth="0.0dip"
+        app:tabMode="fixed" />
+    <TextView
+        android:id="@id/tab_divider"
+        android:background="@color/RbxGray8"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip" />
+    <FrameLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
