@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:background="@drawable/rbx_bg_card_shadow"
+        n1:paddingLeft="12.0dip"
+        n1:paddingTop="12.0dip"
+        n1:paddingRight="12.0dip"
+        n1:paddingBottom="18.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="12.0dip">
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+            <TextView
+                n1:textSize="18.0sp"
+                n1:textColor="@color/RbxBlack"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/Authentication_SignUp_Label_AlmostThere"
+                style="@style/Theme.Roblox.StandardFontBold" />
+            <LinearLayout
+                n1:gravity="center"
+                n1:orientation="horizontal"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="12.0dip">
+                <com.roblox.client.components.RbxCheckBox
+                    n1:textSize="@dimen/textSizeSignupFinePrint"
+                    n1:id="@id/sign_up_agreement_checkbox"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginRight="12.0dip"
+                    n1:layout_marginEnd="12.0dip" />
+                <com.roblox.client.components.RbxTextView
+                    n1:textSize="@dimen/textSizeSignupFinePrint"
+                    n1:textColor="@color/shell_text_normal"
+                    n1:gravity="start"
+                    n1:id="@id/sign_up_agreement_textview"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/CommonUI_Features_Label_LoremIpsumXl"
+                    style="@style/Theme.Roblox.StandardFontLight" />
+            </LinearLayout>
+            <com.roblox.client.components.RbxTextView
+                n1:textAppearance="?android:textAppearanceSmall"
+                n1:textSize="@dimen/rbxEditTextHint"
+                n1:textColor="@color/RbxRed2"
+                n1:id="@id/sign_up_error_agreement_textview"
+                n1:background="@android:color/transparent"
+                n1:visibility="invisible"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:text="@string/Authentication_SignUp_Label_PleaseAgreeToTerms" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.roblox.client.components.RbxProgressButton
+        n1:layout_gravity="bottom"
+        n1:id="@id/sign_up_tos_done_button"
+        n1:layout_width="fill_parent"
+        n1:layout_height="40.0dip"
+        n1:layout_marginLeft="12.0dip"
+        n1:layout_marginRight="12.0dip"
+        n1:layout_marginBottom="12.0dip"
+        n2:buttonTextSize="@dimen/textSizeBtnSubmit"
+        n2:defButtonText="@string/CommonUI_Features_Action_Done"
+        n2:progressTextSize="@dimen/textSizeBtnSubmitProgress"
+        style="@style/Theme.Roblox.Progress.Button.Blue"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

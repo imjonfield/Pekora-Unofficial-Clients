@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:background="@color/RbxGray5"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:id="@id/toolbar"
+        layout="@layout/toolbar_include" />
+    <android.support.v7.widget.RecyclerView
+        n1:id="@id/more_recycler"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+</LinearLayout>

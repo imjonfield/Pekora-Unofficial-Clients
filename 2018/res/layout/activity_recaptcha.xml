@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/container"
+    n1:padding="24.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:minWidth="450.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="20.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/Authentication_Captcha_Label_VerifyHuman" />
+    <FrameLayout
+        n1:background="@drawable/rbx_bg_flat_edittext"
+        n1:layout_width="fill_parent"
+        n1:layout_height="100.0dip"
+        n1:layout_marginTop="20.0dip">
+        <android.lib.recaptcha.ReCaptcha
+            n1:id="@id/recaptcha"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:scaleType="fitCenter"
+            n1:adjustViewBounds="true" />
+        <ProgressBar
+            n1:id="@id/progress"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:indeterminate="true"
+            style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+    <View
+        n1:focusable="true"
+        n1:focusableInTouchMode="true"
+        n1:layout_width="0.0px"
+        n1:layout_height="0.0px" />
+    <android.support.design.widget.TextInputLayout
+        n1:id="@id/captcha_input_layout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="20.0dip">
+        <EditText
+            n1:id="@id/captcha_input"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:hint="@string/Authentication_Captcha_Description_CaptchaHint"
+            n1:maxLines="1"
+            n1:inputType="textVisiblePassword" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        n1:gravity="center_horizontal"
+        n1:orientation="horizontal"
+        n1:padding="0.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="15.0dip">
+        <Button
+            n1:textSize="16.0dip"
+            n1:id="@id/verify"
+            n1:padding="8.0dip"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="8.0dip"
+            n1:text="@string/Authentication_Captcha_Action_Submit"
+            n1:layout_weight="1.0" />
+        <Button
+            n1:textSize="16.0dip"
+            n1:id="@id/reload"
+            n1:padding="8.0dip"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="8.0dip"
+            n1:text="@string/Authentication_Captcha_Action_Reload"
+            n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

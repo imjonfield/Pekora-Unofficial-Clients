@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:background="@drawable/chat_join_game_image_border"
+    n1:paddingLeft="24.0dip"
+    n1:paddingTop="12.0dip"
+    n1:paddingRight="24.0dip"
+    n1:paddingBottom="12.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:paddingStart="24.0dip"
+    n1:paddingEnd="24.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <de.hdodenhof.circleimageview.CircleImageView
+        n1:id="@id/contacts_list_thumbnail_img_view"
+        n1:layout_width="50.0dip"
+        n1:layout_height="50.0dip"
+        n1:src="@drawable/empty_contact_icon"
+        n2:civ_border_color="@color/RbxGray3"
+        n2:civ_border_width="1.0dip"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="12.0dip"
+        n1:layout_weight="4.0"
+        n1:layout_marginStart="12.0dip">
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="14.0sp"
+            n1:textColor="@color/RbxBlack"
+            n1:ellipsize="end"
+            n1:id="@id/contacts_list_name_text_view"
+            n1:focusable="false"
+            n1:clickable="false"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxLines="1"
+            style="@style/Theme.Roblox.StandardFontBold" />
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="12.0sp"
+            n1:id="@id/contacts_list_sub_text_view"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        n1:textSize="14.0sp"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/contacts_send_app_link_button"
+        n1:layout_width="wrap_content"
+        n1:layout_height="32.0dip"
+        n1:text="@string/Features_FriendFinder_Action_Invite"
+        style="@style/Theme.Roblox.Button.Flat.Blue.Primary" />
+</LinearLayout>

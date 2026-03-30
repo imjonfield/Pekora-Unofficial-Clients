@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/nearby_retry_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nearby_presentation"
+        android:adjustViewBounds="true" />
+    <com.roblox.client.components.RbxTextView
+        android:gravity="center_horizontal"
+        android:id="@id/nearby_retry_message_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="24.0dip"
+        android:text="@string/Features_Nearby_Label_LooksLikeNoOneIsAround" />
+    <com.roblox.client.components.RbxButton
+        android:textSize="16.0sp"
+        android:id="@id/nearby_retry_button"
+        android:layout_width="120.0dip"
+        android:layout_height="36.0dip"
+        android:text="@string/Features_Nearby_Action_Retry"
+        style="@style/Theme.Roblox.Button.Flat.Blue.Primary" />
+</LinearLayout>

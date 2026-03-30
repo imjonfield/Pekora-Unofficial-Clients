@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_1" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_2" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_3" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_4" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_5" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_6" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_7" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/nearby_main_icon_8" />
+</animation-list>

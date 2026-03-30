@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/fragment_webview"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:minWidth="450.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View
+        n1:id="@id/focusable_view"
+        n1:focusable="true"
+        n1:focusableInTouchMode="true"
+        n1:layout_width="0.0px"
+        n1:layout_height="0.0px" />
+    <TextView
+        n1:textSize="20.0sp"
+        n1:textColor="@color/shell_text_normal"
+        n1:ellipsize="end"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/webview_urlbar"
+        n1:background="@color/webview_url"
+        n1:paddingLeft="5.0dip"
+        n1:paddingRight="5.0dip"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:singleLine="true"
+        n1:textIsSelectable="true" />
+    <com.roblox.client.components.CustomSwipeRefreshLayout
+        n1:id="@id/swipe_container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <com.roblox.client.hybrid.RBHybridWebView
+            n1:id="@id/web_view"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </com.roblox.client.components.CustomSwipeRefreshLayout>
+</LinearLayout>

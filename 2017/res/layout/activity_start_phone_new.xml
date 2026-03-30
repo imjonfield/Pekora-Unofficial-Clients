@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/landing_layout"
+    android:background="@color/RbxGray5"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="7.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/landing_center_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="6.3">
+        <android.support.v4.view.ViewPager
+            android:id="@id/landing_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabLayout
+            android:id="@id/landing_tab_dots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabIndicatorHeight="0.0dip"
+            app:tabBackground="@drawable/activity_start_tab_selector"
+            app:tabGravity="center" />
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeSignupLogin"
+            android:textStyle="bold"
+            android:textColor="@color/RbxGray2"
+            android:id="@id/play_now_button"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dip"
+            android:layout_marginRight="11.0dip"
+            android:text="@string/Authentication_Login_Action_PlayNow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+        <ImageButton
+            android:id="@id/about_button"
+            android:background="@android:color/transparent"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="11.0dip"
+            android:layout_marginTop="12.0dip"
+            android:src="@drawable/about_icon_grey"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/landing_bottom_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:weightSum="1.0"
+        android:layout_weight="0.7">
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeBtnCancel"
+            android:layout_gravity="center"
+            android:id="@id/login_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/Authentication_Login_Action_Login"
+            android:layout_weight="0.5"
+            style="@style/Theme.Roblox.Button.Flat.White.Square.Corners" />
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeBtnCancel"
+            android:layout_gravity="center"
+            android:id="@id/signup_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/Authentication_SignUp_Label_SignUp"
+            android:layout_weight="0.5"
+            style="@style/Theme.Roblox.Button.Flat.Blue.Square.Corners" />
+    </LinearLayout>
+</LinearLayout>

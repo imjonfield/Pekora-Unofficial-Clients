@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid
+        n1:color="@color/RbxBlue2"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <padding
+        n2:left="@dimen/btnFlatStdPaddingLeftRight"
+        n2:top="@dimen/btnFlatStdPaddingTopBtm"
+        n2:right="@dimen/btnFlatStdPaddingLeftRight"
+        n2:bottom="@dimen/btnFlatStdPaddingTopBtm"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+</shape>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roblox.client.components.RbxLinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/fragment_about_background"
+    n1:background="@color/RbxGray3"
+    n1:padding="10.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View
+        n1:focusable="true"
+        n1:focusableInTouchMode="true"
+        n1:layout_width="0.0px"
+        n1:layout_height="0.0px"
+        n1:layout_weight="0.0" />
+    <ImageView
+        n1:gravity="center"
+        n1:layout_gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="80.0dip"
+        n1:src="@drawable/roblox_logo"
+        n1:scaleType="fitCenter"
+        n1:layout_weight="0.94" />
+    <TextView
+        n1:textSize="15.0sp"
+        n1:textColor="@color/shell_text_normal"
+        n1:ellipsize="none"
+        n1:gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/CommonUI_Features_Label_LegalText"
+        n1:layout_weight="0.0" />
+    <View
+        n1:layout_width="wrap_content"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="0.41" />
+    <com.roblox.client.AutoResizeTextView
+        n1:textSize="20.0sp"
+        n1:textColor="@color/shell_text_normal"
+        n1:ellipsize="none"
+        n1:gravity="center"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/fragment_about_terms_privacy"
+        n1:layout_width="fill_parent"
+        n1:layout_height="25.0dip"
+        n1:text="@string/CommonUI_Features_Label_LoremIpsumXl"
+        n1:layout_weight="1.0" />
+    <com.roblox.client.AutoResizeTextView
+        n1:textSize="20.0sp"
+        n1:textColor="@color/shell_text_normal"
+        n1:ellipsize="none"
+        n1:gravity="center"
+        n1:id="@id/fragment_about_baseURL"
+        n1:layout_width="fill_parent"
+        n1:layout_height="25.0dip"
+        n1:text="@string/CommonUI_Features_Label_LoremIpsumXl"
+        n1:layout_weight="1.0" />
+    <TextView
+        n1:textSize="12.0sp"
+        n1:textColor="@color/shell_text_normal"
+        n1:ellipsize="none"
+        n1:gravity="center"
+        n1:id="@id/fragment_about_user_agent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/CommonUI_Features_Label_LoremIpsum"
+        n1:singleLine="true"
+        n1:layout_weight="0.2"
+        n1:textIsSelectable="true" />
+</com.roblox.client.components.RbxLinearLayout>

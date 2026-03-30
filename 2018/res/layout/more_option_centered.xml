@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:id="@id/more_square_click_frame"
+    n1:background="@drawable/more_page_item_selector"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="14.0sp"
+        n1:gravity="center"
+        n1:id="@id/text"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        style="@style/Theme.Roblox.StandardFontRegular" />
+</FrameLayout>

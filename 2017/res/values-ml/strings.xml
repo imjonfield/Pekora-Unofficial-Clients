@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="common_google_play_services_enable_text">നിങ്ങൾ Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുന്നില്ലെങ്കിൽ %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_enable_title">Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="common_google_play_services_install_button">Google Play സേവനങ്ങൾ സ്വീകരിക്കുക</string>
+    <string name="common_google_play_services_install_text_phone">നിങ്ങൾ Google Play സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുന്നില്ലെങ്കിൽ, %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_install_text_tablet">നിങ്ങളുടെ ടാബ്‌ലെറ്റിൽ നിന്നും വിട്ടുപോയിരിക്കുന്ന Google Play സേവനങ്ങളില്ലാതെ %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_install_title">Google Play സേവനങ്ങൾ നേടുക</string>
+    <string name="common_google_play_services_notification_ticker">Google Play സേവനങ്ങളിലെ പിശക്</string>
+    <string name="common_google_play_services_unknown_issue">Google Play സേവനങ്ങളുമായി ബന്ധപ്പെട്ട് %1$s ബുദ്ധിമുട്ട് നേരിടുന്നു. പ്രശ്നം പരിഹരിക്കപ്പെടുന്നില്ലെങ്കിൽ, സഹായത്തിന് ഡെവലപ്പറെ ബന്ധപ്പെടുക.</string>
+    <string name="common_google_play_services_unsupported_text">നിങ്ങളുടെ ഉപകരണം പിന്തുണയ്ക്കാത്ത Google Play സേവനങ്ങളെയാണ് %1$s ആശ്രയിക്കുന്നത്. സഹായത്തിനായി നിർമ്മാതാവിനെ ബന്ധപ്പെടുക.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play സേവനങ്ങൾ</string>
+    <string name="common_google_play_services_update_button">അപ്‌ഡേറ്റുചെയ്യുക</string>
+    <string name="common_google_play_services_update_text">നിങ്ങൾ Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്‌തില്ലെങ്കിൽ %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_update_title">Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്യുക</string>
+    <string name="common_google_play_services_updating_text">നിലവിൽ അപ്‌ഡേറ്റുചെയ്യുന്ന Google Play സേവനങ്ങൾ ഇല്ലാതെ %1$s പ്രവർത്തിക്കില്ല.</string>
+    <string name="common_google_play_services_updating_title">Google Play സേവനങ്ങൾ അപ്‌ഡേറ്റുചെയ്യുകയാണ്</string>
+    <string name="common_google_play_services_wear_update_text">Google Play സേവനങ്ങളുടെ പുതിയ പതിപ്പ് ആവശ്യമാണ്. താമസിയാതെ ഇത് സ്വയം അപ്‌ഡേറ്റുചെയ്യും.</string>
+    <string name="common_open_on_phone">ഫോണിൽ തുറക്കുക</string>
+    <string name="common_signin_button_text">സൈൻ ഇൻ ചെയ്യുക</string>
+    <string name="common_signin_button_text_long">Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക</string>
+</resources>

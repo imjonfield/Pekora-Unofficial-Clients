@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_above="@id/contacts_error_text"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/RbxGray1"
+        android:gravity="center"
+        android:id="@id/contacts_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:text="@string/Features_FriendFinder_Label_FetchingContacts"
+        android:layout_centerInParent="true"
+        style="Theme.Roblox.StandardFontRegular" />
+</RelativeLayout>

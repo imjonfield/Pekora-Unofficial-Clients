@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeSignupFinePrint">11.0sp</dimen>
+    <dimen name="textSizeSignupHeader">16.0sp</dimen>
+    <dimen name="textSizeSignupLogin">12.0sp</dimen>
+    <dimen name="tabBarTextSize">6.0sp</dimen>
+    <dimen name="textSizeButton">10.0sp</dimen>
+    <dimen name="textSizeButtonImportant">12.0sp</dimen>
+    <dimen name="textSizeLabel">7.0sp</dimen>
+</resources>

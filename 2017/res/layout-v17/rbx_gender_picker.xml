@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/rbxGenderContainer"
+        android:background="@drawable/rbx_bg_gender_full"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="55.0">
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0">
+            <TextView
+                android:textSize="20.0sp"
+                android:textColor="@color/RbxGray2"
+                android:gravity="center_vertical"
+                android:id="@id/rbxGenderText"
+                android:paddingLeft="@dimen/stdHintLeftIndent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/Authentication_SignUp_Label_Gender" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0">
+            <View
+                android:background="@color/RbxGray4"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+            <ImageView
+                android:id="@id/rbxGenderBtnMaleBg"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:src="@drawable/icon_male"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+            <com.roblox.client.components.RbxButton
+                android:id="@id/rbxGenderBtnMale"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/Authentication_SignUp_Description_GenderPickerMaleContentDesc"
+                style="@style/Theme.Roblox.Button.Gender.Male" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0">
+            <View
+                android:background="@color/RbxGray4"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+            <ImageView
+                android:id="@id/rbxGenderBtnFemaleBg"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:src="@drawable/icon_female"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+            <com.roblox.client.components.RbxButton
+                android:id="@id/rbxGenderBtnFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/Authentication_SignUp_Description_GenderPickerFemaleContentDesc"
+                style="@style/Theme.Roblox.Button.Gender.Female" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="25.0">
+        <com.roblox.client.components.RbxTextView
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/rbxEditTextHint"
+            android:textColor="@color/RbxRed2"
+            android:id="@id/rbxGenderBottomText"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:text="@string/Authentication_SignUp_Label_GenderRequired"
+            android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

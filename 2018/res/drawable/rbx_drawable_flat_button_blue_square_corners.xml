@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_focused="true"
+        n1:state_pressed="true"
+        n1:drawable="@drawable/rbx_bg_flat_square_corners_button_blue_down"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:state_focused="false"
+        n2:state_pressed="true"
+        n2:drawable="@drawable/rbx_bg_flat_square_corners_button_blue_down"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:drawable="@drawable/rbx_bg_flat_square_corners_button_blue_up"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+</selector>

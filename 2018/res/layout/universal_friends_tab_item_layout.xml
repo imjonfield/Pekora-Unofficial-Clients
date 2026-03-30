@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    n1:layout_gravity="center_horizontal"
+    n1:orientation="vertical"
+    n1:id="@id/tab_item_main_layout"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/tab_item_image_container"
+        n1:layout_width="48.0dip"
+        n1:layout_height="48.0dip"
+        n2:layout_constraintEnd_toEndOf="@id/tab_item_main_layout"
+        n2:layout_constraintStart_toStartOf="@id/tab_item_main_layout"
+        n2:layout_constraintTop_toTopOf="@id/tab_item_main_layout"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            n1:id="@id/tab_item_image"
+            n1:background="@drawable/tab_selector"
+            n1:layout_width="38.0dip"
+            n1:layout_height="38.0dip"
+            n1:scaleType="center"
+            n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="12.0sp"
+        n1:textColor="@color/RbxGray1"
+        n1:ellipsize="end"
+        n1:gravity="center_horizontal"
+        n1:id="@id/tab_item_text"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="3.0dip"
+        n1:maxLines="2"
+        n3:layout_constraintEnd_toEndOf="@id/tab_item_main_layout"
+        n3:layout_constraintStart_toStartOf="@id/tab_item_main_layout"
+        n3:layout_constraintTop_toBottomOf="@id/tab_item_image_container"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

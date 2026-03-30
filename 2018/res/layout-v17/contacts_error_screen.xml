@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:layout_marginLeft="24.0dip"
+    n1:layout_marginRight="24.0dip"
+    n1:layout_marginStart="24.0dip"
+    n1:layout_marginEnd="24.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="16.0sp"
+        n1:textColor="@color/RbxGray1"
+        n1:gravity="center"
+        n1:id="@id/contacts_error_text"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="15.0dip"
+        n1:text="@string/Features_FriendFinder_Response_NetworkError"
+        n1:layout_centerHorizontal="true" />
+    <com.roblox.client.components.RbxButton
+        n1:textSize="14.0sp"
+        n1:id="@id/contacts_error_ok_button"
+        n1:layout_width="100.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="24.0dip"
+        n1:text="@string/CommonUI_Features_Action_Ok"
+        n1:layout_below="@id/contacts_error_text"
+        n1:layout_centerHorizontal="true"
+        style="@style/Theme.Roblox.Button.Flat.Blue.Primary" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:orientation="horizontal"
+        n1:padding="12.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="20.0sp"
+            n1:textStyle="bold"
+            n1:textColor="@color/RbxGray1"
+            n1:gravity="center_vertical"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/Application_AppRating_Label_PleaseRate" />
+        <TextView
+            n1:textSize="18.0sp"
+            n1:textColor="@color/RbxGray2"
+            n1:id="@id/dialog_rating_close_btn"
+            n1:paddingLeft="5.0dip"
+            n1:paddingRight="5.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/Application_AppRating_Label_AppRatingDialogCloseButtonText"
+            n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView
+        n1:background="@color/black"
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px" />
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="18.0sp"
+        n1:textColor="@color/RbxGray1"
+        n1:gravity="start|center"
+        n1:id="@id/rbxTextView"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="12.0dip"
+        n1:layout_marginTop="12.0dip"
+        n1:layout_marginBottom="12.0dip"
+        n1:text="@string/Application_AppRating_Label_RatingMessage" />
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="0.1">
+        <Space
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="3.0" />
+        <com.roblox.client.components.RbxButton
+            n1:layout_gravity="center"
+            n1:id="@id/dialog_rating_positive_btn"
+            n1:layout_width="0.0dip"
+            n1:layout_height="50.0dip"
+            n1:text="@string/Application_AppRating_Label_RatingYes"
+            n1:layout_weight="10.0"
+            n2:buttonTextSize="16.0sp"
+            style="@style/Theme.Roblox.Button.Flat.Blue"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <Space
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="1.0" />
+        <com.roblox.client.components.RbxButton
+            n1:textSize="16.0sp"
+            n1:layout_gravity="center"
+            n1:id="@id/dialog_rating_negative_btn"
+            n1:layout_width="0.0dip"
+            n1:layout_height="50.0dip"
+            n1:text="@string/Application_AppRating_Action_RatingNegativeButton"
+            n1:layout_weight="10.0"
+            style="@style/Theme.Roblox.Button.Flat.White" />
+        <Space
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="12.0dip"
+        n1:layout_marginBottom="12.0dip">
+        <com.roblox.client.components.RbxButton
+            n1:textSize="16.0sp"
+            n1:textStyle="bold"
+            n1:textColor="@color/RbxBlue1"
+            n1:gravity="start"
+            n1:id="@id/dialog_rating_skip_btn"
+            n1:background="@android:color/transparent"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/Application_AppRating_Action_RatingRemindMeLater" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxButton
+        android:id="@id/rbxProgressBtnRbxBtn"
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/rbxProgressBtnProgressContainer"
+        android:paddingLeft="@dimen/btnFlatStdPaddingLeftRight"
+        android:paddingTop="@dimen/btnFlatStdPaddingTopBtm"
+        android:paddingRight="@dimen/btnFlatStdPaddingLeftRight"
+        android:paddingBottom="@dimen/btnFlatStdPaddingTopBtm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            <ProgressBar
+                android:layout_gravity="center_horizontal"
+                android:id="@id/rbxProgressBtnProgressBar"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:indeterminateDrawable="@drawable/rbx_bg_progress_btn_spinner"
+                android:layout_weight="1.0"
+                style="@android:style/Widget.ProgressBar.Small" />
+            <com.roblox.client.components.RbxTextView
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:id="@id/rbxProgressBtnProgressText"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:singleLine="false"
+                android:layout_weight="10.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

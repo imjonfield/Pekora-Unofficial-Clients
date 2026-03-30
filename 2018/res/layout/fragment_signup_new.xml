@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roblox.client.components.RbxLinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/fragment_sign_up_background"
+    n1:background="@color/RbxGray5"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center_horizontal"
+        n1:layout_gravity="center"
+        n1:orientation="horizontal"
+        n1:id="@id/fragment_sign_up_swap_container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:weightSum="10.0" />
+</com.roblox.client.components.RbxLinearLayout>

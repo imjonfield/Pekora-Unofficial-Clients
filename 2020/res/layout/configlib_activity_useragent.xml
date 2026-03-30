@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:id="@id/ua_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="User-Agent"
+        app:layout_constraintTop_toBottomOf="@id/ua_reset_btn" />
+    <Button
+        android:textSize="14.0sp"
+        android:id="@id/ua_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@id/ua_reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@id/dist_label"
+        android:padding="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distribution"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Spinner
+        android:id="@id/dist_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/dist_label"
+        app:layout_constraintStart_toEndOf="@id/dist_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

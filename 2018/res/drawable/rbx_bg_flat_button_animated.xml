@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item
+        n1:drawable="@drawable/rbx_bg_flat_button_blue_up"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item>
+        <scale
+            n2:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            n2:duration="400"
+            n2:drawable="@drawable/rbx_bg_flat_button_circle"
+            n2:fillAfter="true"
+            n2:fromXScale="0.0"
+            n2:toXScale="1.0"
+            n2:fromYScale="0.0"
+            n2:toYScale="1.0"
+            xmlns:n2="http://schemas.android.com/apk/res/android" />
+    </item>
+</layer-list>

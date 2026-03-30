@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:background="@color/chatWhite"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/mainToolbarHeight">
+            <View
+                n1:id="@id/header_shadow"
+                n1:background="@drawable/chat_shadow_darkgray"
+                n1:layout_width="5.0dip"
+                n1:layout_height="@dimen/mainToolbarHeight" />
+            <include
+                n1:id="@id/toolbar_chat"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/mainToolbarHeight"
+                n1:layout_toRightOf="@id/header_shadow"
+                layout="@layout/toolbar_include" />
+            <com.roblox.client.components.RbxTextView
+                n1:textSize="16.0sp"
+                n1:textColor="@color/chatWhite"
+                n1:gravity="center"
+                n1:id="@id/create_conversation_action_button"
+                n1:background="@drawable/chat_send_button"
+                n1:paddingLeft="8.0dip"
+                n1:paddingRight="8.0dip"
+                n1:visibility="visible"
+                n1:layout_width="wrap_content"
+                n1:layout_height="30.0dip"
+                n1:layout_marginRight="10.0dip"
+                n1:layout_marginBottom="5.0dip"
+                n1:text="@string/Feature_Chat_Label_Create"
+                n1:layout_alignParentRight="true"
+                n1:layout_centerVertical="true"
+                style="@style/Theme.Roblox.StandardFontRegular" />
+        </RelativeLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:minHeight="52.0dip">
+            <View
+                n1:id="@id/selection_shadow"
+                n1:background="@drawable/chat_shadow_white"
+                n1:layout_width="5.0dip"
+                n1:layout_height="fill_parent" />
+            <LinearLayout
+                n1:layout_gravity="center_vertical"
+                n1:orientation="vertical"
+                n1:paddingTop="8.0dip"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content">
+                <View
+                    n1:focusable="true"
+                    n1:focusableInTouchMode="true"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="0.0dip" />
+                <com.roblox.client.components.MaxHeightScrollView
+                    n1:id="@id/contacts_container"
+                    n1:visibility="gone"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginBottom="8.0dip"
+                    n2:maxHeight="150.0dip"
+                    xmlns:n2="http://schemas.android.com/apk/res-auto">
+                    <org.apmem.tools.layouts.FlowLayout
+                        n1:gravity="center_vertical"
+                        n1:id="@id/contacts_flow"
+                        n1:paddingRight="3.0dip"
+                        n1:visibility="visible"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent" />
+                </com.roblox.client.components.MaxHeightScrollView>
+                <LinearLayout
+                    n1:orientation="horizontal"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content">
+                    <com.roblox.client.components.RbxChatEditText
+                        n1:textSize="16.0sp"
+                        n1:textColorHint="@color/chatSubText"
+                        n1:id="@id/search_edit"
+                        n1:background="@null"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="10.0dip"
+                        n1:layout_marginRight="10.0dip"
+                        n1:layout_marginBottom="8.0dip"
+                        n1:hint="@string/Feature_Chat_Label_SearchWord"
+                        n1:maxLines="1"
+                        n1:layout_weight="1.0"
+                        n1:inputType="textPersonName"
+                        n1:imeOptions="actionDone"
+                        style="@style/Theme.Roblox.StandardFontRegular" />
+                    <ImageButton
+                        n1:id="@id/close_search"
+                        n1:background="#00000000"
+                        n1:visibility="gone"
+                        n1:layout_width="20.0dip"
+                        n1:layout_height="20.0dip"
+                        n1:layout_marginLeft="10.0dip"
+                        n1:layout_marginTop="1.0dip"
+                        n1:layout_marginRight="20.0dip"
+                        n1:src="@drawable/close_chat_rename" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <View
+                n1:id="@id/list_shadow"
+                n1:background="@drawable/chat_shadow_white"
+                n1:layout_width="5.0dip"
+                n1:layout_height="fill_parent" />
+            <LinearLayout
+                n1:orientation="vertical"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content">
+                <View
+                    n1:background="@color/chatBackground"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+                <FrameLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent">
+                    <ListView
+                        n1:id="@id/list"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:listSelector="@drawable/contact_selector"
+                        n1:divider="@null" />
+                    <include
+                        n1:id="@id/connecting_banner"
+                        layout="@layout/connecting_banner" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

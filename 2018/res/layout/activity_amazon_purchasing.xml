@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/activity_amazon_purchasing"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="20.0dip"
+        n1:layout_centerInParent="true">
+        <ProgressBar
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/CommonUI_Messages_Label_Working_InProgress" />
+    </LinearLayout>
+</RelativeLayout>

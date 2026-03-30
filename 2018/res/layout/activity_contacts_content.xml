@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:id="@id/contacts_content_layout"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto" />

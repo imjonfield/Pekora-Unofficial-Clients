@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roblox.client.components.RobloxToolbar
+    n1:background="@color/RbxBlue3"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/mainToolbarHeight"
+    n1:minHeight="@dimen/mainToolbarHeight"
+    n2:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    n2:subtitleTextAppearance="@style/RobloxCompatTheme.Toolbar.SubTitleText"
+    n2:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    n2:titleTextAppearance="@style/RobloxCompatTheme.Toolbar.TitleText"
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        n1:layout_gravity="center"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content">
+        <TextView
+            n1:textSize="18.0sp"
+            n1:textColor="@color/white"
+            n1:id="@id/toolbar_title"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerHorizontal="true" />
+        <TextView
+            n1:textSize="10.0sp"
+            n1:id="@id/toolbar_subtitle"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="-3.0dip"
+            n1:layout_below="@id/toolbar_title"
+            n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.roblox.client.components.RobloxToolbar>

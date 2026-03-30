@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roblox.client.ReclickableTabHost
+    n1:id="@android:id/tabhost"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:id="@id/content_main"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_marginBottom="@dimen/mainTabWidgetHeight">
+        <FrameLayout
+            n1:id="@id/content_container_no_toolbar"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <FrameLayout
+            n1:id="@id/content_overlay"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/content_main_no_margin"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <FrameLayout
+        n1:layout_gravity="bottom"
+        n1:id="@id/tab_layout"
+        n1:background="#fff9f9f9"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <TabWidget
+            n1:gravity="bottom|center"
+            n1:layout_gravity="bottom|center"
+            n1:id="@android:id/tabs"
+            n1:layout_width="620.0dip"
+            n1:layout_height="@dimen/mainTabWidgetHeight"
+            n1:tabStripEnabled="false"
+            n1:showDividers="none" />
+    </FrameLayout>
+    <FrameLayout
+        n1:layout_gravity="bottom"
+        n1:id="@android:id/tabcontent"
+        n1:layout_width="0.0dip"
+        n1:layout_height="0.0dip"
+        n1:layout_alignParentBottom="true" />
+</com.roblox.client.ReclickableTabHost>

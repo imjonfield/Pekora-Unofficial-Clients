@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnFlatStdCornerRadius">4.0dip</dimen>
+    <dimen name="emailAlert">16.0sp</dimen>
+    <dimen name="settingsAlertIconLeftMargin">8.0dip</dimen>
+    <dimen name="textSizeBtnCancel">22.0sp</dimen>
+    <dimen name="textSizeBtnSubmit">22.0sp</dimen>
+    <dimen name="textSizeCreateUsernameChoose">23.0sp</dimen>
+    <dimen name="textSizeCreateUsernameHeader">26.0sp</dimen>
+    <dimen name="textSizeSignupHeader">22.0sp</dimen>
+    <dimen name="textSizeSignupLogin">17.0sp</dimen>
+</resources>

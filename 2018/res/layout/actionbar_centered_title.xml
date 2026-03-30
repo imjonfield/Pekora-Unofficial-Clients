@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="18.0sp"
+        n1:textColor="#ffffffff"
+        n1:layout_gravity="center|left"
+        n1:id="@id/ab_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/CommonUI_Features_Label_Home" />
+</LinearLayout>

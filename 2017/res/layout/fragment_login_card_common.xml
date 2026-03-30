@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.2"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.roblox.client.components.RbxTextView
+            android:textSize="@dimen/textSizeSignupHeader"
+            android:textColor="@color/RbxGray2"
+            android:gravity="bottom"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_Login_Label_Login"
+            android:layout_weight="2.0" />
+    </LinearLayout>
+    <View
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0.0px"
+        android:layout_height="0.0px" />
+    <com.roblox.client.components.RbxEditText
+        android:id="@id/fragment_login_username"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="3.0dip"
+        android:layout_weight="0.4"
+        android:contentDescription="@string/Authentication_Login_Description_UsernameContentDescription"
+        app:hintText="@string/Authentication_Login_Label_Username"
+        app:errorText="@string/Authentication_SignUp_Response_UsernameContainsInvalidCharacters"
+        app:hintTextLong="@string/Authentication_SignUp_Description_UsernameHintTextLong"
+        app:inputType="textNoSuggestions"
+        style="@style/Theme.Roblox.EditText" />
+    <com.roblox.client.components.RbxEditText
+        android:id="@id/fragment_login_password"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_weight="0.4"
+        android:contentDescription="@string/Authentication_Login_Description_PasswordContentDescription"
+        app:hintText="@string/CommonUI_Message_Label_Password"
+        app:hintTextLong="@string/Authentication_SignUp_Description_PasswordHintTextLong"
+        app:inputType="password"
+        style="@style/Theme.Roblox.EditText" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="12.0dip"
+        android:paddingBottom="12.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.2" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.5">
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0" />
+            <com.roblox.client.components.RbxButton
+                android:textSize="@dimen/textSizeBtnCancel"
+                android:layout_gravity="center"
+                android:id="@id/fragment_login_btn_cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/CommonUI_Controls_Action_Cancel"
+                android:layout_weight="10.0"
+                android:contentDescription="@string/Authentication_Login_Description_CancelButtonContentDesc"
+                style="@style/Theme.Roblox.Button.Flat.White" />
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+            <com.roblox.client.components.RbxProgressButton
+                android:layout_gravity="center"
+                android:id="@id/fragment_login_btn_login"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10.0"
+                android:contentDescription="@string/Authentication_Login_Description_LoginButtonContentDesc"
+                app:defButtonText="@string/Authentication_Login_Action_Login"
+                app:progressTextSize="@dimen/textSizeBtnSubmitProgress"
+                app:buttonTextSize="@dimen/textSizeBtnSubmit"
+                style="@style/Theme.Roblox.Progress.Button.Blue" />
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.75">
+            <com.roblox.client.components.RbxTextView
+                android:textSize="@dimen/textSizeLoginFinePrint"
+                android:gravity="center|right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/Authentication_Login_Label_NotAMember" />
+            <com.roblox.client.components.RbxButton
+                android:textSize="@dimen/textSizeLoginFinePrint"
+                android:textColor="@color/RbxBlue2"
+                android:gravity="left"
+                android:id="@id/fragment_login_btn_signup"
+                android:background="@android:color/transparent"
+                android:paddingLeft="4.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Authentication_Login_Action_SignUp" />
+        </LinearLayout>
+        <com.roblox.client.components.RbxButton
+            android:textSize="@dimen/textSizeLoginFinePrint"
+            android:textColor="@color/RbxBlue2"
+            android:id="@id/fragment_login_btn_forgot_password"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Authentication_Login_Action_ForgotPasswordQuestion" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/fragment_video"
+    n1:visibility="invisible"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/videoContainer"
+        n1:background="#ff000000"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="0.5">
+        <com.roblox.ima.AdPlayer
+            n1:id="@id/videoPlayerWithAdPlayback"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <com.roblox.ima.VideoPlayerImpl
+                n1:id="@id/videoPlayer"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_centerHorizontal="true" />
+            <FrameLayout
+                n1:id="@id/adUiContainer"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent" />
+        </com.roblox.ima.AdPlayer>
+    </LinearLayout>
+</LinearLayout>

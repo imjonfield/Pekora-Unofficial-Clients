@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:id="@id/landing_layout"
+    n1:background="@color/activityBackground"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <Space
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0" />
+        <LinearLayout
+            n1:gravity="center_horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="2.0">
+            <ImageView
+                n1:layout_gravity="center"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/roblox_logo" />
+        </LinearLayout>
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="vertical"
+            n1:id="@id/landing_center_content"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="6.0">
+            <com.roblox.client.components.RbxButton
+                n1:enabled="true"
+                n1:id="@id/login_button"
+                n1:layout_width="250.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="@string/Authentication_Login_Action_Login"
+                style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+            <Space
+                n1:layout_width="20.0dip"
+                n1:layout_height="20.0dip" />
+            <com.roblox.client.components.RbxButton
+                n1:enabled="true"
+                n1:id="@id/signup_button"
+                n1:layout_width="250.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="@string/Authentication_SignUp_Action_SignUp"
+                style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+            <Space
+                n1:layout_width="20.0dip"
+                n1:layout_height="20.0dip" />
+            <com.roblox.client.components.RbxButton
+                n1:enabled="true"
+                n1:id="@id/play_now_button"
+                n1:layout_width="250.0dip"
+                n1:layout_height="wrap_content"
+                n1:text="@string/Authentication_Login_Action_PlayNow"
+                style="@style/Theme.Roblox.Button.Flat.White.Settings" />
+        </LinearLayout>
+        <FrameLayout
+            n1:id="@id/landing_bottom_content"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="2.0">
+            <TextView
+                n1:textSize="15.0sp"
+                n1:textColor="@color/shell_text_normal"
+                n1:ellipsize="none"
+                n1:gravity="center"
+                n1:layout_gravity="bottom|center"
+                n1:id="@id/tvStartFinePrint"
+                n1:padding="20.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginBottom="20.0dip"
+                n1:maxLines="100"
+                n1:scrollHorizontally="false" />
+            <ImageButton
+                n1:layout_gravity="end|bottom|center"
+                n1:id="@id/about_button"
+                n1:background="@android:color/transparent"
+                n1:layout_width="25.0dip"
+                n1:layout_height="25.0dip"
+                n1:layout_marginLeft="10.0dip"
+                n1:layout_marginRight="10.0dip"
+                n1:layout_marginBottom="10.0dip"
+                n1:src="@drawable/about_icon_2"
+                n1:scaleType="centerInside" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

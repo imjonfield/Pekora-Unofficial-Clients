@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <include
+            n1:id="@id/toolbar_chatlist"
+            layout="@layout/toolbar_include" />
+        <FrameLayout
+            n1:id="@id/list_container"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <LinearLayout
+                n1:orientation="vertical"
+                n1:id="@id/chat_list_container"
+                n1:background="@color/chatListBackground"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <View
+                    n1:background="@color/chatBackground"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="1.0dip" />
+                <FrameLayout
+                    n1:paddingLeft="12.0dip"
+                    n1:paddingRight="12.0dip"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="52.0dip">
+                    <com.roblox.client.components.RbxTextView
+                        n1:textSize="20.0sp"
+                        n1:textColor="@color/chatPrimary"
+                        n1:gravity="center"
+                        n1:layout_gravity="center"
+                        n1:id="@id/create_group_button"
+                        n1:background="@drawable/chat_white_button"
+                        n1:paddingTop="6.0dip"
+                        n1:paddingBottom="6.0dip"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:text="@string/Feature_Chat_Label_CreateChatGroup"
+                        style="@style/Theme.Roblox.StandardFontRegular" />
+                </FrameLayout>
+                <android.support.v4.widget.SwipeRefreshLayout
+                    n1:id="@id/swipeContainer"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent">
+                    <ListView
+                        n1:id="@id/list"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:listSelector="@drawable/contact_selector"
+                        n1:divider="@null" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </LinearLayout>
+            <RelativeLayout
+                n1:id="@id/chat_list_empty"
+                n1:background="@color/chatBackground"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <com.roblox.client.components.RbxTextView
+                    n1:textSize="16.0sp"
+                    n1:id="@id/chat_start_hint"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/Feature_Chat_Label_MakeFriendsChat"
+                    n1:layout_centerInParent="true"
+                    style="@style/Theme.Roblox.StandardFontRegular" />
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginBottom="5.0dip"
+                    n1:src="@drawable/symbol_friends"
+                    n1:layout_above="@id/chat_start_hint"
+                    n1:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <FrameLayout
+                n1:id="@id/chat_list_loading"
+                n1:background="@color/chatBackground"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <include
+                    n1:layout_gravity="center"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    layout="@layout/chat_loading_squares" />
+            </FrameLayout>
+            <include
+                n1:id="@id/connecting_banner"
+                layout="@layout/connecting_banner" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center"
+    n1:orientation="horizontal"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:layout_width="35.0dip"
+        n1:layout_height="35.0dip"
+        layout="@layout/include_rbx_progress_bar" />
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="@dimen/splashLoadingTextSize"
+        n1:textColor="@color/black"
+        n1:gravity="top"
+        n1:id="@id/splash_progress_text"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="10.0dip"
+        n1:text="@string/CommonUI_Messages_Label_Loading" />
+</LinearLayout>

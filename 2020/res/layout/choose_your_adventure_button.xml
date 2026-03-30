@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/info_layout"
+        android:background="@drawable/choose_your_adv_button_selector"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="14.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingBottom="10.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:minHeight="@dimen/chooseYourAdvButtonMinHeight"
+        app:layout_constraintTop_toTopOf="@id/info_icon">
+        <com.roblox.client.components.RbxTextView
+            android:textSize="@dimen/chooseYourAdvButtonTitleTextSize"
+            android:textColor="@color/white"
+            android:id="@id/main_info_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:textAlignment="center" />
+        <com.roblox.client.components.RbxTextView
+            android:textSize="@dimen/chooseYourAdvButtonSubTitleTextSize"
+            android:textColor="@color/white"
+            android:id="@id/sub_info_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <ImageView
+        android:id="@id/info_icon"
+        android:layout_width="100.0dip"
+        android:layout_height="58.0dip"
+        android:src="@drawable/choose_adv_nearby"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.roblox.client.components.RbxTextView
+        android:textSize="12.0sp"
+        android:textColor="@color/white"
+        android:id="@id/permission_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

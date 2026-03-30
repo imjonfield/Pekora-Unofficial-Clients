@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item
+        n1:id="@id/action_overlay_submit_button"
+        n1:title="@string/CommonUI_Controls_Action_Submit"
+        n2:actionLayout="@layout/button_overlay_submit_layout"
+        n2:showAsAction="always"
+        xmlns:n1="http://schemas.android.com/apk/res/android"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</menu>

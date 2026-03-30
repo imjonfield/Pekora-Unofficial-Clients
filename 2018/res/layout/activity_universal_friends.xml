@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/universal_friend_tab_container"
+    n1:background="@color/activityBackground"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:id="@id/universal_friends_toolbar_include"
+        layout="@layout/toolbar_include" />
+    <android.support.design.widget.TabLayout
+        n1:id="@id/universal_friends_tab_layout"
+        n1:background="@color/white"
+        n1:paddingLeft="@dimen/nearbyTabLayoutEdgePadding"
+        n1:paddingRight="@dimen/nearbyTabLayoutEdgePadding"
+        n1:layout_width="fill_parent"
+        n1:layout_height="95.0dip"
+        n2:tabIndicatorColor="@android:color/transparent"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:id="@id/tab_divider"
+        n1:background="@color/RbxGray8"
+        n1:layout_width="fill_parent"
+        n1:layout_height="2.0dip" />
+    <FrameLayout
+        n1:id="@id/container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+</LinearLayout>

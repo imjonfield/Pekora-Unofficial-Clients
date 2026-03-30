@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/fragment_sign_up_inner_background"
+        n1:background="@drawable/rbx_bg_card_shadow"
+        n1:paddingLeft="15.0dip"
+        n1:paddingTop="12.0dip"
+        n1:paddingRight="15.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginLeft="10.0dip"
+        n1:layout_marginTop="10.0dip"
+        n1:layout_marginRight="10.0dip"
+        n1:layout_marginBottom="1.0dip"
+        n1:layout_weight="10.0">
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:id="@id/fragment_sign_up_card_inner_container"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

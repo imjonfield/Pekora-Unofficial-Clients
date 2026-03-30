@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textColor="#ffb8b8b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4.0dip"
+        android:text="@string/CommonUI_Messages_Label_Loading"
+        android:layout_marginEnd="4.0dip" />
+    <ImageView
+        android:id="@id/dotImage1"
+        android:paddingBottom="2.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4.0dip"
+        android:src="@drawable/progress_dot"
+        android:contentDescription="@string/CommonUI_Features_Label_LoadingDot"
+        android:layout_marginEnd="4.0dip" />
+    <ImageView
+        android:id="@id/dotImage2"
+        android:paddingBottom="2.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4.0dip"
+        android:src="@drawable/progress_dot"
+        android:contentDescription="@string/CommonUI_Features_Label_LoadingDot"
+        android:layout_marginEnd="4.0dip" />
+    <ImageView
+        android:id="@id/dotImage3"
+        android:paddingBottom="2.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4.0dip"
+        android:src="@drawable/progress_dot"
+        android:contentDescription="@string/CommonUI_Features_Label_LoadingDot"
+        android:layout_marginEnd="4.0dip" />
+</LinearLayout>

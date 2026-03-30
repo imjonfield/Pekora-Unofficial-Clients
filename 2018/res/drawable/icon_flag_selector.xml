@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_selected="true"
+        n1:drawable="@drawable/icon_flag_on"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:state_pressed="true"
+        n2:drawable="@drawable/icon_flag_on"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:drawable="@drawable/icon_flag"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+</selector>

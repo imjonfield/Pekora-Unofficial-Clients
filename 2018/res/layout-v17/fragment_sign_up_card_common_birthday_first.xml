@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:weightSum="7.5"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="bottom"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginTop="2.0dip"
+        n1:layout_weight="0.5">
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="@dimen/textSizeSignupHeader"
+            n1:textColor="@color/RbxGray2"
+            n1:gravity="bottom"
+            n1:layout_gravity="bottom"
+            n1:id="@id/fragment_signup_header_txt"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:text="@string/Authentication_SignUp_Label_SignUpWord"
+            n1:layout_weight="1.0" />
+        <com.roblox.client.components.RbxButton
+            n1:textSize="@dimen/textSizeSignupLogin"
+            n1:textColor="@color/RbxBlue2"
+            n1:gravity="center|right"
+            n1:layout_gravity="bottom"
+            n1:id="@id/fragment_sign_up_login_btn"
+            n1:background="@android:color/transparent"
+            n1:paddingRight="1.0dip"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:text="@string/Authentication_SignUp_Action_LoginWord"
+            n1:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        n1:focusable="true"
+        n1:focusableInTouchMode="true"
+        n1:layout_width="0.0px"
+        n1:layout_height="0.0px" />
+    <com.roblox.client.components.RbxBirthdayPicker
+        n1:layout_gravity="center"
+        n1:id="@id/fragment_sign_up_birthday_picker"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginTop="3.0dip"
+        n1:layout_weight="1.0"
+        style="@style/Theme.Roblox.StandardFontLight" />
+    <com.roblox.client.signup.UsernameSignUpEditText
+        n1:id="@id/fragment_sign_up_username"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginTop="2.0dip"
+        n1:layout_weight="1.0"
+        n1:contentDescription="@string/Authentication_SignUp_Description_SignUpUsernameContentDesc"
+        n2:errorText="@string/Authentication_SignUp_Response_UsernameContainsInvalidCharacters"
+        n2:hintText="@string/Authentication_SignUp_Description_Username"
+        n2:hintTextLong="@string/Authentication_SignUp_Description_UsernameHintTextLong"
+        n2:inputType="textNoSuggestions"
+        style="@style/Theme.Roblox.EditText"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.roblox.client.components.RbxEditText
+        n1:id="@id/fragment_sign_up_password"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginTop="2.0dip"
+        n1:layout_weight="1.0"
+        n1:contentDescription="@string/Authentication_SignUp_Description_SignUpPasswordContentDesc"
+        n3:hintText="@string/CommonUI_Messages_Label_Password"
+        n3:hintTextLong="@string/Authentication_SignUp_Description_PasswordHintTextLong"
+        n3:inputType="password"
+        style="@style/Theme.Roblox.EditText"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.roblox.client.components.RbxEditText
+        n1:id="@id/fragment_sign_up_password_verify"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginTop="2.0dip"
+        n1:layout_weight="1.0"
+        n1:contentDescription="@string/Authentication_SignUp_Description_SignUpPasswordConfirmContentDesc"
+        n4:errorText="@string/Authentication_SignUp_Response_PasswordMismatch"
+        n4:hintText="@string/Authentication_SignUp_Label_ConfirmPassword"
+        n4:inputType="password"
+        style="@style/Theme.Roblox.EditText"
+        xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.roblox.client.components.RbxGenderPicker
+        n1:layout_gravity="center"
+        n1:id="@id/fragment_sign_up_gender_picker"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_marginTop="2.0dip"
+        n1:layout_weight="1.0"
+        style="@style/Theme.Roblox.StandardFontLight" />
+    <com.roblox.client.components.RbxLoadingEditText
+        n1:id="@id/fragment_sign_up_email"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="1.0"
+        n1:contentDescription="@string/Authentication_SignUp_Label_Email"
+        n5:hintText="@string/Authentication_SignUp_Label_Email"
+        n5:inputType="email"
+        style="@style/Theme.Roblox.EditText"
+        xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <com.roblox.client.components.RbxCheckBox
+            n1:textSize="@dimen/textSizeSignupFinePrint"
+            n1:id="@id/fragment_sign_up_agreement_check"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="6.0dip"
+            n1:layout_marginEnd="6.0dip" />
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="@dimen/textSizeSignupFinePrint"
+            n1:textColor="@color/shell_text_normal"
+            n1:gravity="start"
+            n1:layout_gravity="top"
+            n1:id="@id/fragment_sign_up_agreement"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="8.0dip"
+            n1:text="@string/CommonUI_Features_Label_LoremIpsumXl"
+            n1:scrollHorizontally="false"
+            style="@style/Theme.Roblox.StandardFontLight" />
+    </LinearLayout>
+    <com.roblox.client.components.RbxTextView
+        n1:textAppearance="?android:textAppearanceSmall"
+        n1:textSize="@dimen/rbxEditTextHint"
+        n1:textColor="@color/RbxRed2"
+        n1:id="@id/fragment_sign_up_terms_error"
+        n1:background="@android:color/transparent"
+        n1:visibility="invisible"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="6.0dip"
+        n1:text="@string/Authentication_SignUp_Label_PleaseAgreeToTerms"
+        n1:layout_marginStart="6.0dip" />
+    <LinearLayout
+        n1:gravity="bottom"
+        n1:layout_gravity="bottom"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="1.0">
+        <Space
+            n1:layout_gravity="bottom"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_marginBottom="15.0dip"
+            n1:layout_weight="@integer/fragment_sign_up_cancel_button_margin_left_layout_weight" />
+        <com.roblox.client.components.RbxButton
+            n1:textSize="@dimen/textSizeBtnCancel"
+            n1:layout_gravity="bottom"
+            n1:id="@id/fragment_sign_up_cancel_btn"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginTop="12.0dip"
+            n1:layout_marginBottom="12.0dip"
+            n1:text="@string/Authentication_SignUp_Action_Cancel"
+            n1:layout_weight="@integer/fragment_sign_up_cancel_button_layout_weight"
+            n1:contentDescription="@string/Authentication_SignUp_Description_CancelButtonContentDesc"
+            style="@style/Theme.Roblox.Button.Flat.White" />
+        <Space
+            n1:layout_gravity="bottom"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_marginBottom="15.0dip"
+            n1:layout_weight="@integer/fragment_sign_up_space_between_sign_up_cancel_buttons_layout_weight" />
+        <com.roblox.client.components.RbxProgressButton
+            n1:layout_gravity="bottom"
+            n1:id="@id/fragment_sign_up_submit_btn"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginTop="12.0dip"
+            n1:layout_marginBottom="12.0dip"
+            n1:layout_weight="@integer/fragment_sign_up_sign_up_button_layout_weight"
+            n1:contentDescription="@string/Authentication_SignUp_Description_SubmitButtonContentDesc"
+            n6:buttonTextSize="@dimen/textSizeBtnSubmit"
+            n6:defButtonText="@string/Authentication_SignUp_Label_SignUp"
+            n6:progressTextSize="@dimen/textSizeBtnSubmitProgress"
+            style="@style/Theme.Roblox.Progress.Button.Blue"
+            xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <Space
+            n1:layout_gravity="bottom"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_marginBottom="15.0dip"
+            n1:layout_weight="@integer/fragment_sign_up_sign_up_button_margin_right_layout_weight" />
+    </LinearLayout>
+</LinearLayout>

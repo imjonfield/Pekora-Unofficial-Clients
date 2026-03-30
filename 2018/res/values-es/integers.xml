@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fragment_login_cancel_button_layout_weight">50</integer>
+    <integer name="fragment_login_login_button_layout_weight">50</integer>
+    <integer name="fragment_login_space_between_login_cancel_buttons_layout_weight">5</integer>
+</resources>

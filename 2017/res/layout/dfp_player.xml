@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.doubleclick.PublisherAdView
+    android:id="@id/dfp_adview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    ads:adSize="FLUID"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto" />

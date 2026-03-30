@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item
+        n1:id="@id/action_notification_stream"
+        n1:orderInCategory="@integer/menuItemOrderNotificationStream"
+        n1:title="@string/Notifications_NotificationStream_Heading_NotificationStreamWord"
+        n2:actionLayout="@layout/button_notification_stream_layout"
+        n2:showAsAction="always"
+        xmlns:n1="http://schemas.android.com/apk/res/android"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</menu>

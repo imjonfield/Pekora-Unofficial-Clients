@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:paddingLeft="15.0dip"
+    n1:paddingRight="12.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:paddingStart="15.0dip"
+    n1:paddingEnd="12.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxSearchView
+        n1:id="@id/activity_search_search_view"
+        n1:background="@color/RbxTransparent"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginRight="12.0dip"
+        n1:layout_weight="1.0"
+        n1:iconifiedByDefault="false"
+        n1:queryHint="asdfadsfadsfadsf"
+        n1:layout_marginEnd="12.0dip"
+        n1:closeIcon="@drawable/icon_close"
+        n1:searchIcon="@drawable/icon_search_white" />
+    <com.roblox.client.components.RbxButton
+        n1:textSize="16.0sp"
+        n1:textColor="@color/white"
+        n1:id="@id/activity_search_cancel_button"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/CommonUI_Controls_Action_Cancel"
+        style="@style/Theme.Roblox.Button.Flat.Transparent" />
+</LinearLayout>

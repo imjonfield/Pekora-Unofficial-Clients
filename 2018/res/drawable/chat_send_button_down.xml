@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid
+        n1:color="@color/chatBlueDark"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <corners
+        n2:radius="3.0dip"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+</shape>

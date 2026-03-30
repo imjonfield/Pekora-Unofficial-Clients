@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textSize="14.0sp"
+    android:gravity="center"
+    android:id="@id/text"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/Theme.Roblox.StandardFontRegular"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

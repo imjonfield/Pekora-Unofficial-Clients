@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:id="@id/contact_name_container"
+    n1:background="@drawable/contact_selected_button"
+    n1:paddingLeft="9.0dip"
+    n1:paddingTop="6.0dip"
+    n1:paddingRight="6.0dip"
+    n1:paddingBottom="6.0dip"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:layout_marginLeft="10.0dip"
+    n1:layout_marginBottom="5.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/chatContactItemTextSize"
+        n1:textColor="@color/black"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/contact_name"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="name" />
+    <ImageView
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/icon_close"
+        n1:layout_width="16.0dip"
+        n1:layout_height="16.0dip"
+        n1:layout_marginLeft="5.0dip"
+        n1:src="@drawable/icon_close" />
+</LinearLayout>

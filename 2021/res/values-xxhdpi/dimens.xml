@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeSignupHeader">27.0sp</dimen>
+    <dimen name="textSizeSignupFinePrint">16.0sp</dimen>
+    <dimen name="textSizeSignupLogin">19.0sp</dimen>
+</resources>

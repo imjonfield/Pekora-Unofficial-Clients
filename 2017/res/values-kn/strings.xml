@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">ಸಕ್ರಿಯಗೊಳಿಸು</string>
+    <string name="common_google_play_services_enable_text">Google Play ಸೇವೆಗಳನ್ನು ನೀವು ಸಕ್ರಿಯಗೊಳಿಸದ ಹೊರತು %1$s ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_enable_title">Google Play ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="common_google_play_services_install_button">Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ</string>
+    <string name="common_google_play_services_install_text_phone">Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ನಿಮ್ಮ ಫೋನ್‍‍ನಿಂದ ಕಾಣೆಯಾಗಿರುವ %1$s ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_install_text_tablet">Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್‍ನಿಂದ ಕಾಣೆಯಾಗಿರುವ %1$s ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_install_title">Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ಸೇವೆಗಳ ದೋಷ</string>
+    <string name="common_google_play_services_unknown_issue">Google Play ಸೇವೆಗಳಲ್ಲಿ %1$s ಅಪ್ಲಿಕೇಶನ್ ಸಮಸ್ಯೆಯನ್ನು ಎದುರಿಸುತ್ತಿದೆ. ಸಮಸ್ಯೆ ಮುಂದುವರಿದರೆ, ಸಹಾಯಕ್ಕಾಗಿ ಡೆವಲಪರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ನಿಮ್ಮ ಸಾಧನವು ಬೆಂಬಲಿಸದಿರುವಂತಹ Google Play ಸೇವೆಗಳನ್ನು ಅವಲಂಬಿಸಿದೆ. ಸಹಾಯಕ್ಕಾಗಿ ತಯಾರಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play ಸೇವೆಗಳು</string>
+    <string name="common_google_play_services_update_button">ಅಪ್‌ಡೇಟ್‌ ಮಾಡು</string>
+    <string name="common_google_play_services_update_text">ನೀವು Google Play ಸೇವೆಗಳನ್ನು ನವೀಕರಿಸದ ಹೊರತು %1$s ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_update_title">Google Play ಸೇವೆಗಳನ್ನು ಅಪ್‌ಡೇಟ್‌ ಮಾಡಿ</string>
+    <string name="common_google_play_services_updating_text">Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ಪ್ರಸ್ತುತ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತಿರುವ %1$s ರನ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="common_google_play_services_updating_title">Google Play ಸೇವೆಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="common_google_play_services_wear_update_text">Google Play ಸೇವೆಗಳ ಹೊಸ ಆವೃತ್ತಿ ಅಗತ್ಯವಿದೆ. ಸದ್ಯದಲ್ಲೇ ಅದು ತಾನಾಗಿಯೇ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ.</string>
+    <string name="common_open_on_phone">ಫೋನ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ</string>
+    <string name="common_signin_button_text">ಸೈನ್ ಇನ್</string>
+    <string name="common_signin_button_text_long">Google ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+</resources>

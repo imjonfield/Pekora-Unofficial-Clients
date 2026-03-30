@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    n1:tag="layout/nearby_user_item_0"
+    n1:padding="5.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:layout_margin="5.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/nearby_user_img_layout"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:layout_marginRight="8.0dip"
+        n1:layout_marginStart="8.0dip"
+        n1:layout_marginEnd="8.0dip"
+        n2:layout_constraintEnd_toEndOf="parent"
+        n2:layout_constraintStart_toStartOf="parent"
+        n2:layout_constraintTop_toTopOf="parent"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <de.hdodenhof.circleimageview.CircleImageView
+            n1:id="@id/nearby_user_img_view"
+            n1:tag="binding_1"
+            n1:layout_width="60.0dip"
+            n1:layout_height="60.0dip"
+            n1:src="@drawable/nearby_default_thumbnail"
+            n1:layout_centerInParent="true"
+            n2:civ_fill_color="@color/nearby_user_back_color" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            n1:id="@id/nearby_user_back_img_view"
+            n1:tag="binding_2"
+            n1:layout_width="65.0dip"
+            n1:layout_height="65.0dip"
+            n1:layout_centerInParent="true" />
+        <ImageView
+            n1:id="@id/nearby_add_friend_img_view"
+            n1:tag="binding_3"
+            n1:layout_width="20.0dip"
+            n1:layout_height="20.0dip"
+            n1:layout_alignRight="@id/nearby_user_back_img_view"
+            n1:layout_alignBottom="@id/nearby_user_back_img_view"
+            n1:layout_alignEnd="@id/nearby_user_back_img_view" />
+    </RelativeLayout>
+    <TextView
+        n1:textSize="12.0sp"
+        n1:textColor="@color/RbxBlack"
+        n1:ellipsize="end"
+        n1:gravity="center"
+        n1:id="@id/nearby_username_text_view"
+        n1:tag="binding_4"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="8.0dip"
+        n1:layout_marginTop="3.0dip"
+        n1:layout_marginRight="8.0dip"
+        n1:maxWidth="90.0dip"
+        n1:layout_marginStart="8.0dip"
+        n1:layout_marginEnd="8.0dip"
+        n3:layout_constraintEnd_toEndOf="parent"
+        n3:layout_constraintStart_toStartOf="parent"
+        n3:layout_constraintTop_toBottomOf="@id/nearby_user_img_layout"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:textSize="12.0sp"
+        n1:id="@id/nearby_user_status_text_view"
+        n1:tag="binding_5"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="8.0dip"
+        n1:layout_marginRight="8.0dip"
+        n1:layout_marginStart="8.0dip"
+        n1:layout_marginEnd="8.0dip"
+        n4:layout_constraintEnd_toEndOf="parent"
+        n4:layout_constraintStart_toStartOf="parent"
+        n4:layout_constraintTop_toBottomOf="@id/nearby_username_text_view"
+        xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

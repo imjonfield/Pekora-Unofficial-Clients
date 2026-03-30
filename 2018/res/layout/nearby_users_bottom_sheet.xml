@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="18.0sp"
+        n1:textColor="@color/nearby_context_menu_text_color"
+        n1:gravity="center_vertical"
+        n1:id="@id/nearby_friend_profile_text_view"
+        n1:paddingLeft="20.0dip"
+        n1:paddingTop="15.0dip"
+        n1:paddingBottom="15.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/Features_Nearby_Label_ViewProfile"
+        n1:drawableLeft="@drawable/nearby_context_menu_icon_profile"
+        n1:drawablePadding="20.0dip"
+        n1:drawableStart="@drawable/nearby_context_menu_icon_profile" />
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="18.0sp"
+        n1:textColor="@color/nearby_context_menu_text_color"
+        n1:gravity="center_vertical"
+        n1:id="@id/nearby_friend_cancel_text_view"
+        n1:paddingLeft="20.0dip"
+        n1:paddingTop="15.0dip"
+        n1:paddingBottom="15.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/CommonUI_Controls_Action_Cancel"
+        n1:drawableLeft="@drawable/nearby_context_menu_icon_close"
+        n1:drawablePadding="20.0dip"
+        n1:drawableStart="@drawable/nearby_context_menu_icon_close" />
+</LinearLayout>

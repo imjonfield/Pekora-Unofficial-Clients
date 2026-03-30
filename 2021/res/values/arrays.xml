@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roblox_channels">
+        <item>zcanary</item>
+        <item>zcanary1</item>
+        <item>zlive</item>
+        <item>zlive1</item>
+        <item>zintegration</item>
+        <item>zintegration1</item>
+        <item>zcanaryapps</item>
+        <item>zsocialteam</item>
+    </string-array>
+</resources>

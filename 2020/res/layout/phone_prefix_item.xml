@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:tag="layout/phone_prefix_item_0"
+    android:background="@drawable/phone_prefix_item_back"
+    android:padding="15.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.roblox.client.components.RbxTextView
+        android:textSize="18.0sp"
+        android:textColor="@color/black"
+        android:id="@id/country_name_text_view"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.roblox.client.components.RbxTextView
+        android:textSize="18.0sp"
+        android:textColor="@color/black"
+        android:id="@id/country_code_prefix_text_view"
+        android:tag="binding_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginStart="8.0dip"
+        app:layout_constraintStart_toEndOf="@id/country_name_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

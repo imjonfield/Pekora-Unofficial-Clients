@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item
+        n1:id="@id/menu_add_friends"
+        n1:visible="false"
+        n1:title="@string/Feature_Chat_Heading_AddFriends"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:id="@id/menu_view_profile"
+        n2:visible="false"
+        n2:title="@string/Feature_Chat_Heading_ViewProfile"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:id="@id/menu_report"
+        n3:visible="false"
+        n3:title="@string/CommonUI_Features_Heading_ReportAbuse"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:id="@id/menu_view_participants"
+        n4:visible="false"
+        n4:title="@string/Feature_Chat_Heading_ViewParticipants"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item
+        n5:id="@id/menu_rename_title"
+        n5:visible="false"
+        n5:title="@string/Feature_Chat_Heading_RenameChatGroup"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item
+        n6:id="@id/menu_leave_group"
+        n6:visible="false"
+        n6:title="@string/Feature_Chat_Heading_LeaveGroup"
+        xmlns:n6="http://schemas.android.com/apk/res/android" />
+</menu>

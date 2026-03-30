@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roblox.client.components.RbxTextView
+    n1:textSize="21.0sp"
+    n1:textColor="@color/RbxGray2"
+    n1:gravity="center"
+    n1:id="@id/rbxSpinnerItem"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:textAlignment="center"
+    style="@style/Theme.Roblox.StandardFontRegular"
+    xmlns:n1="http://schemas.android.com/apk/res/android" />

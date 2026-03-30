@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">સક્ષમ કરો</string>
+    <string name="common_google_play_services_enable_text">તમે Google Play સેવાઓ સક્ષમ કરશો નહીં ત્યાં સુધી %1$s કાર્ય કરશે નહીં.</string>
+    <string name="common_google_play_services_enable_title">Google Play સેવાઓ સક્ષમ કરો</string>
+    <string name="common_google_play_services_install_button">Google Play સેવાઓ મેળવો</string>
+    <string name="common_google_play_services_install_text_phone">%1$s, Google Play સેવાઓ વગર ચાલશે નહીં, જે તમારા ફોનમાંથી ખૂટે છે.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s, Google Play સેવાઓ વગર ચાલશે નહીં, જે તમારા ટેબ્લેટમાંથી ખૂટે છે.</string>
+    <string name="common_google_play_services_install_title">Google Play સેવાઓ મેળવો</string>
+    <string name="common_google_play_services_notification_ticker">Google Play સેવાઓની ભૂલ</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ને Google Play સેવાઓમાં સમસ્યા આવી રહી છે. જો સમસ્યા યથાવત્ રહે છે, તો સહાયતા માટે કૃપા કરીને વિકાસકર્તાનો સંપર્ક કરો.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s Google Play સેવાઓ પર આધાર રાખે છે, જે તમારા ઉપકરણ દ્વારા સમર્થિત નથી. સહાયતા માટે નિર્માતાનો સંપર્ક કરો.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play સેવાઓ</string>
+    <string name="common_google_play_services_update_button">અપડેટ કરો</string>
+    <string name="common_google_play_services_update_text">તમે Google Play સેવાઓ અપડેટ કરશો નહીં ત્યાં સુધી %1$s શરૂ થશે નહીં.</string>
+    <string name="common_google_play_services_update_title">Google Play સેવાઓ અપડેટ કરો</string>
+    <string name="common_google_play_services_updating_text">%1$s, Google Play સેવાઓ વગર શરૂ થશે નહીં, જે વર્તમાનમાં અપડેટ થઈ રહી છે.</string>
+    <string name="common_google_play_services_updating_title">Google Play સેવાઓ અપડેટ થઈ રહી છે</string>
+    <string name="common_google_play_services_wear_update_text">Google Play સેવાઓના નવા સંસ્કરણની જરૂર છે. તે ટૂંક સમયમાં પોતાને અપડેટ કરશે.</string>
+    <string name="common_open_on_phone">ફોનમાં ખોલો</string>
+    <string name="common_signin_button_text">સાઇન ઇન કરો</string>
+    <string name="common_signin_button_text_long">Google માં સાઇન ઇન કરો</string>
+</resources>

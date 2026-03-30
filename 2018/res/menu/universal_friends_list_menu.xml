@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item
+        n1:icon="@drawable/icon_search_white"
+        n1:id="@id/menu_search_friends"
+        n1:title="@string/Features_UniversalFriender_Action_SearchFriends"
+        n2:showAsAction="always"
+        xmlns:n1="http://schemas.android.com/apk/res/android"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</menu>

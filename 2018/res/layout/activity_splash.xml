@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:orientation="vertical"
+    n1:background="@color/activityBackground"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:layout_gravity="center"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/roblox_logo"
+        n1:contentDescription="@string/CommonUI_Messages_Label_Roblox" />
+    <com.roblox.client.components.LoadingBar
+        n1:layout_gravity="bottom|center"
+        n1:orientation="horizontal"
+        n1:id="@id/loading_progress_view"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="30.0dip" />
+</FrameLayout>

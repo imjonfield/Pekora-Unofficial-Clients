@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:paddingLeft="10.0dip"
+    n1:paddingRight="10.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:background="@color/white"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+            <TextView
+                n1:textSize="20.0dip"
+                n1:textColor="@color/black"
+                n1:id="@id/title"
+                n1:paddingLeft="15.0dip"
+                n1:paddingTop="12.0dip"
+                n1:paddingRight="15.0dip"
+                n1:paddingBottom="12.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text=""
+                n1:layout_weight="1.0" />
+            <ImageView
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/close_button"
+                n1:paddingLeft="10.0dip"
+                n1:paddingRight="10.0dip"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/icon_close"
+                n1:tint="@color/RbxGray4" />
+        </LinearLayout>
+        <View
+            n1:background="@color/RbxGray3"
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip" />
+        <TextView
+            n1:textSize="18.0dip"
+            n1:id="@id/description"
+            n1:paddingLeft="15.0dip"
+            n1:paddingTop="12.0dip"
+            n1:paddingRight="15.0dip"
+            n1:paddingBottom="12.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="" />
+        <FrameLayout
+            n1:layout_gravity="center_horizontal"
+            n1:background="@color/RbxGray3"
+            n1:padding="1.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+            <ImageView
+                n1:id="@id/thumbnail"
+                n1:background="@color/white"
+                n1:layout_width="150.0dip"
+                n1:layout_height="150.0dip"
+                n1:src="@drawable/ic_launcher_transparent" />
+        </FrameLayout>
+        <Button
+            n1:textSize="20.0dip"
+            n1:textColor="@color/white"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/get_button"
+            n1:background="@drawable/rbx_drawable_flat_button_progress_blue"
+            n1:paddingLeft="14.0dip"
+            n1:paddingTop="10.0dip"
+            n1:paddingRight="14.0dip"
+            n1:paddingBottom="10.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_margin="15.0dip"
+            n1:text="@string/Feature_PromoCatalog_Action_GetNow" />
+    </LinearLayout>
+</FrameLayout>

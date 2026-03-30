@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/keyboard_background_holo"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/emojis_tab"
+        n1:layout_width="fill_parent"
+        n1:layout_height="50.0dip"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:id="@id/emojis_tab_0_recents"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ic_emoji_recent_light"
+            n1:scaleType="center"
+            n1:layout_weight="1.0" />
+        <View
+            n1:background="@color/horizontal_vertical"
+            n1:layout_width="1.0px"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:id="@id/emojis_tab_1_people"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ic_emoji_people_light"
+            n1:scaleType="center"
+            n1:layout_weight="1.0" />
+        <View
+            n1:background="@color/horizontal_vertical"
+            n1:layout_width="1.0px"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:id="@id/emojis_tab_2_nature"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ic_emoji_nature_light"
+            n1:scaleType="center"
+            n1:layout_weight="1.0" />
+        <View
+            n1:background="@color/horizontal_vertical"
+            n1:layout_width="1.0px"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:id="@id/emojis_tab_3_objects"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ic_emoji_objects_light"
+            n1:scaleType="center"
+            n1:layout_weight="1.0" />
+        <View
+            n1:background="@color/horizontal_vertical"
+            n1:layout_width="1.0px"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:id="@id/emojis_tab_4_cars"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ic_emoji_places_light"
+            n1:scaleType="center"
+            n1:layout_weight="1.0" />
+        <View
+            n1:background="@color/horizontal_vertical"
+            n1:layout_width="1.0px"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:id="@id/emojis_tab_5_punctuation"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/ic_emoji_symbols_light"
+            n1:scaleType="center"
+            n1:layout_weight="1.0" />
+        <View
+            n1:background="@color/horizontal_vertical"
+            n1:layout_width="1.0px"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:id="@id/emojis_backspace"
+            n1:background="@null"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/sym_keyboard_delete_holo_dark"
+            n1:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        n1:id="@id/emojis_pager"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@id/emojis_tab"
+        n1:layout_alignParentBottom="true" />
+    <View
+        n1:background="@color/horizontal_divider"
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:layout_below="@id/emojis_tab" />
+</RelativeLayout>

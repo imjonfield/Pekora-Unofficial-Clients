@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:background="@color/RbxGray8"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:id="@id/contacts_error_screen"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        layout="@layout/contacts_error_screen" />
+    <include
+        n1:id="@id/contacts_loading_screen"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        layout="@layout/contacts_loading_screen" />
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/contacts_contacts_list"
+        n1:focusable="true"
+        n1:focusableInTouchMode="true"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <com.roblox.client.components.RbxSearchView
+            n1:textSize="17.0sp"
+            n1:id="@id/contacts_search_view"
+            n1:background="@color/white"
+            n1:padding="5.0dip"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:imeOptions="actionDone"
+            n1:iconifiedByDefault="false"
+            n1:queryHint="@string/Features_FriendFinder_Label_SearchContacts" />
+        <TextView
+            n1:background="@color/RbxGray8"
+            n1:layout_width="fill_parent"
+            n1:layout_height="2.0dip" />
+        <android.support.v7.widget.RecyclerView
+            n1:id="@id/contacts_recycler_view"
+            n1:scrollbars="vertical"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

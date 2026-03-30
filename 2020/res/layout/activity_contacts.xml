@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/activityBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@id/contacts_toolbar_include"
+        layout="@layout/toolbar_include" />
+    <RelativeLayout
+        android:id="@id/permissions_request_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@id/permissions_needed_linear_layout"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:animateLayoutChanges="true">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginBottom="12.0dip"
+                android:src="@drawable/contactsheader" />
+            <com.roblox.client.components.RbxTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/RbxGray1"
+                android:gravity="start"
+                android:id="@id/contacts_fine_print_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24.0dip"
+                android:text="@string/Features_FriendFinder_Response_ContactPermissionNeeded" />
+            <com.roblox.client.components.RbxButton
+                android:textSize="16.0sp"
+                android:id="@id/contacts_needed_continue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:text="@string/Features_FriendFinder_Action_Continue"
+                style="@style/Theme.Roblox.Button.Flat.Blue.Primary" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@id/app_settings_linear_layout"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:animateLayoutChanges="true">
+            <com.roblox.client.components.RbxTextView
+                android:textSize="16.0sp"
+                android:textColor="@color/RbxGray1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24.0dip"
+                android:text="@string/Features_FriendFinder_Action_NeedContactsAccess" />
+            <com.roblox.client.components.RbxButton
+                android:textSize="16.0sp"
+                android:id="@id/app_settings_needed_button"
+                android:layout_width="wrap_content"
+                android:layout_height="36.0dip"
+                android:text="@string/Features_FriendFinder_Action_AppSettings"
+                style="@style/Theme.Roblox.Button.Flat.Blue.Primary" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include
+        layout="@layout/activity_contacts_content" />
+</LinearLayout>

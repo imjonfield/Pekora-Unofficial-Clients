@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="12.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/converse_thumbnail_layout"
+        android:background="@drawable/contact_status_ring"
+        android:padding="1.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@id/converse_thumbnail"
+            android:layout_width="@dimen/chatConversationViewThumbnailSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailSize"
+            android:src="@drawable/ic_avatar_placement" />
+        <ImageView
+            android:id="@id/converse_thumbnail_left"
+            android:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailSize"
+            android:src="@drawable/ic_avatar_placement"
+            android:scaleType="centerCrop"
+            android:layout_alignLeft="@id/converse_thumbnail"
+            android:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            android:id="@id/converse_thumbnail_right"
+            android:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailSize"
+            android:src="@drawable/ic_avatar_placement"
+            android:scaleType="centerCrop"
+            android:layout_toRightOf="@id/converse_thumbnail_left"
+            android:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            android:id="@id/converse_thumbnail_left_top"
+            android:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            android:src="@drawable/ic_avatar_placement"
+            android:layout_alignLeft="@id/converse_thumbnail"
+            android:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            android:id="@id/converse_thumbnail_left_bottom"
+            android:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            android:src="@drawable/ic_avatar_placement"
+            android:layout_alignLeft="@id/converse_thumbnail"
+            android:layout_alignBottom="@id/converse_thumbnail" />
+        <ImageView
+            android:id="@id/converse_thumbnail_right_top"
+            android:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            android:src="@drawable/ic_avatar_placement"
+            android:layout_toRightOf="@id/converse_thumbnail_left"
+            android:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            android:id="@id/converse_thumbnail_right_bottom"
+            android:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            android:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            android:src="@drawable/ic_avatar_placement"
+            android:layout_toRightOf="@id/converse_thumbnail_left"
+            android:layout_alignBottom="@id/converse_thumbnail" />
+    </RelativeLayout>
+    <View
+        android:id="@id/online_status_ring"
+        android:background="@drawable/circle_shape_white"
+        android:visibility="visible"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_alignRight="@id/converse_thumbnail_layout"
+        android:layout_alignBottom="@id/converse_thumbnail_layout" />
+    <View
+        android:id="@id/online_status"
+        android:background="@drawable/circle_shape_green"
+        android:visibility="visible"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_margin="2.0dip"
+        android:layout_alignRight="@id/converse_thumbnail_layout"
+        android:layout_alignBottom="@id/converse_thumbnail_layout" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/converse_thumbnail_layout"
+        android:layout_centerVertical="true">
+        <com.roblox.client.components.RbxTextView
+            android:textSize="18.0sp"
+            android:textColor="@color/chatPrimary"
+            android:ellipsize="end"
+            android:id="@id/converse_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:maxLines="1"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+        <com.roblox.client.components.RbxTextView
+            android:textSize="16.0sp"
+            android:textColor="@color/chatSubText"
+            android:ellipsize="end"
+            android:id="@id/converse_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:text=""
+            android:maxLines="1"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/RbxGray5"
+    android:paddingLeft="@dimen/morePageListPaddingLeft"
+    android:paddingRight="@dimen/morePageListPaddingRight"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@id/more_square_click_frame"
+        android:background="@drawable/more_page_item_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_gravity="left"
+            android:background="@color/chatBackground"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:textSize="14.0sp"
+            android:gravity="center"
+            android:id="@id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+        <View
+            android:layout_gravity="right"
+            android:background="@color/chatBackground"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

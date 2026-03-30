@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:padding="12.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/converse_thumbnail_layout"
+        n1:background="@drawable/contact_status_ring"
+        n1:padding="1.0dip"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true">
+        <ImageView
+            n1:id="@id/converse_thumbnail"
+            n1:layout_width="@dimen/chatConversationViewThumbnailSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailSize"
+            n1:src="@drawable/ic_avatar_placement" />
+        <ImageView
+            n1:id="@id/converse_thumbnail_left"
+            n1:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailSize"
+            n1:src="@drawable/ic_avatar_placement"
+            n1:scaleType="centerCrop"
+            n1:layout_alignLeft="@id/converse_thumbnail"
+            n1:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            n1:id="@id/converse_thumbnail_right"
+            n1:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailSize"
+            n1:src="@drawable/ic_avatar_placement"
+            n1:scaleType="centerCrop"
+            n1:layout_toRightOf="@id/converse_thumbnail_left"
+            n1:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            n1:id="@id/converse_thumbnail_left_top"
+            n1:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:src="@drawable/ic_avatar_placement"
+            n1:layout_alignLeft="@id/converse_thumbnail"
+            n1:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            n1:id="@id/converse_thumbnail_left_bottom"
+            n1:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:src="@drawable/ic_avatar_placement"
+            n1:layout_alignLeft="@id/converse_thumbnail"
+            n1:layout_alignBottom="@id/converse_thumbnail" />
+        <ImageView
+            n1:id="@id/converse_thumbnail_right_top"
+            n1:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:src="@drawable/ic_avatar_placement"
+            n1:layout_toRightOf="@id/converse_thumbnail_left"
+            n1:layout_alignTop="@id/converse_thumbnail" />
+        <ImageView
+            n1:id="@id/converse_thumbnail_right_bottom"
+            n1:layout_width="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:layout_height="@dimen/chatConversationViewThumbnailHalfSize"
+            n1:src="@drawable/ic_avatar_placement"
+            n1:layout_toRightOf="@id/converse_thumbnail_left"
+            n1:layout_alignBottom="@id/converse_thumbnail" />
+    </RelativeLayout>
+    <View
+        n1:id="@id/online_status_ring"
+        n1:background="@drawable/circle_shape_white"
+        n1:visibility="visible"
+        n1:layout_width="20.0dip"
+        n1:layout_height="20.0dip"
+        n1:layout_alignRight="@id/converse_thumbnail_layout"
+        n1:layout_alignBottom="@id/converse_thumbnail_layout" />
+    <View
+        n1:id="@id/online_status"
+        n1:background="@drawable/circle_shape_green"
+        n1:visibility="visible"
+        n1:layout_width="16.0dip"
+        n1:layout_height="16.0dip"
+        n1:layout_margin="2.0dip"
+        n1:layout_alignRight="@id/converse_thumbnail_layout"
+        n1:layout_alignBottom="@id/converse_thumbnail_layout" />
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_toRightOf="@id/converse_thumbnail_layout"
+        n1:layout_centerVertical="true">
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="18.0sp"
+            n1:textColor="@color/chatPrimary"
+            n1:ellipsize="end"
+            n1:id="@id/converse_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="name"
+            n1:maxLines="1"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+        <com.roblox.client.components.RbxTextView
+            n1:textSize="16.0sp"
+            n1:textColor="@color/chatSubText"
+            n1:ellipsize="end"
+            n1:id="@id/converse_subtext"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="3.0dip"
+            n1:text=""
+            n1:maxLines="1"
+            style="@style/Theme.Roblox.StandardFontRegular" />
+    </LinearLayout>
+</RelativeLayout>

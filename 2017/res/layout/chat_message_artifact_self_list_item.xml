@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/chatBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxTextView
+        android:textSize="@dimen/chatConversationViewTimeText"
+        android:textColor="@color/chatSubText"
+        android:id="@id/message_time"
+        android:padding="4.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Feature_Chat_Label_DummyTime"
+        android:layout_centerHorizontal="true"
+        style="@style/Theme.Roblox.StandardFontRegular" />
+    <ImageButton
+        android:id="@id/resend_message"
+        android:background="@color/RbxTransparent"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/resend_msg_button_selector"
+        android:layout_toLeftOf="@id/message_bubble"
+        android:layout_alignTop="@id/message_bubble_ear" />
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="vertical"
+        android:id="@id/message_bubble"
+        android:background="@drawable/chat_bubble_blue_v2"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="9.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_below="@id/message_time"
+        android:layout_alignParentRight="true">
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:textSize="@dimen/chatConversationViewContentText"
+            android:textColor="@color/chatPrimary"
+            android:id="@id/message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+    <com.roblox.client.components.RbxTextView
+        android:textSize="@dimen/chatConversationViewStatusText"
+        android:textColor="@color/chatSecondary"
+        android:id="@id/message_status"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/message_bubble"
+        android:layout_alignRight="@id/message_bubble"
+        style="@style/Theme.Roblox.StandardFontRegular" />
+    <ImageView
+        android:id="@id/message_bubble_ear"
+        android:visibility="visible"
+        android:layout_width="10.0dip"
+        android:layout_height="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="-7.0dip"
+        android:src="@drawable/chat_bubble_blue_ear_v2"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@id/message_bubble"
+        android:layout_alignRight="@id/message_bubble" />
+</RelativeLayout>

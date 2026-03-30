@@ -1,0 +1,81 @@
+{
+  "apkFileName": "Roblox_v2.355.243337_src_mod_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png",
+    "jpg",
+    "assets/fingerprint.txt"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-260328",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "2.355.243337",
+    "versionCode": "449"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {
+    "play-services-analytics.properties": "8",
+    "META-INF/android.arch.lifecycle_extensions.version": "8",
+    "META-INF/com.android.support_recyclerview-v7.version": "8",
+    "play-services-ads-lite.properties": "8",
+    "META-INF/com.android.support_design.version": "8",
+    "third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml": "8",
+    "play-services-ads-identifier.properties": "8",
+    "META-INF/proguard/com.roblox.client.friends.nearby.NearbyPresenter.pro": "8",
+    "play-services-ads.properties": "8",
+    "play-services-tasks.properties": "8",
+    "META-INF/android.arch.lifecycle_runtime.version": "8",
+    "META-INF/proguard/com.roblox.client.friends.UniversalFriendsPresenter.pro": "8",
+    "play-services-iid.properties": "8",
+    "third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml": "8",
+    "play-services-gcm.properties": "8",
+    "META-INF/android.arch.persistence_db-framework.version": "8",
+    "META-INF/android.arch.persistence_db.version": "8",
+    "META-INF/com.android.support_support-fragment.version": "8",
+    "META-INF/com.android.support_support-v4.version": "8",
+    "META-INF/com.android.support_support-media-compat.version": "8",
+    "META-INF/com.android.support_support-vector-drawable.version": "8",
+    "META-INF/com.android.support_animated-vector-drawable.version": "8",
+    "jsr305_annotations/Jsr305_annotations.gwt.xml": "8",
+    "META-INF/com.android.support_customtabs.version": "8",
+    "META-INF/android.arch.lifecycle_livedata.version": "8",
+    "play-services-identity.properties": "8",
+    "META-INF/android.arch.core_runtime.version": "8",
+    "play-services-basement.properties": "8",
+    "META-INF/com.android.support_appcompat-v7.version": "8",
+    "META-INF/com.android.support_support-core-utils.version": "8",
+    "META-INF/nanohttpd/default-mimetypes.properties": "8",
+    "META-INF/nanohttpd/mimetypes.properties": "8",
+    "third_party/java_src/error_prone/Annotations.gwt.xml": "8",
+    "META-INF/com.android.support_transition.version": "8",
+    "error_prone/Annotations.gwt.xml": "8",
+    "play-services-measurement-base.properties": "8",
+    "META-INF/android.arch.persistence.room_runtime.version": "8",
+    "META-INF/proguard/com.roblox.client.login.mvp.LoginPresenter.pro": "8",
+    "play-services-stats.properties": "8",
+    "META-INF/com.android.support_support-compat.version": "8",
+    "META-INF/com.android.support_support-core-ui.version": "8",
+    "play-services-base.properties": "8",
+    "META-INF/android.arch.lifecycle_livedata-core.version": "8",
+    "play-services-gass.properties": "8",
+    "META-INF/android.arch.lifecycle_viewmodel.version": "8",
+    "play-services-ads-base.properties": "8",
+    "play-services-analytics-impl.properties": "8"
+  },
+  "apkFilePath": "/storage/emulated/0/Podcasts/Roblox_v2.355.243337_src/Roblox_v2.355.243337_src_mod.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "16",
+    "targetSdkVersion": "27"
+  }
+}

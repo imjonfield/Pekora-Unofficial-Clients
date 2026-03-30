@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:layout_gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:paddingLeft="5.0dip"
+    n1:paddingRight="10.0dip"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:layout_weight="0.0"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:layout_gravity="center_vertical"
+        n1:visibility="visible"
+        n1:layout_width="32.0dip"
+        n1:layout_height="32.0dip"
+        n1:src="@drawable/icon_logout" />
+</LinearLayout>

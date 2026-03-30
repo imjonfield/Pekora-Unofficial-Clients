@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_selected="true"
+        n1:state_pressed="false"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item
+                n1:left="-5.0dip"
+                n1:top="-5.0dip"
+                n1:right="-5.0dip">
+                <shape
+                    n1:shape="rectangle">
+                    <stroke
+                        n1:width="4.0dip"
+                        n1:color="@color/black" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

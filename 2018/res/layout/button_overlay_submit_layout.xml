@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:layout_gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:paddingLeft="5.0dip"
+    n1:paddingRight="10.0dip"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button
+        n1:enabled="false"
+        n1:textSize="16.0dip"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/submit_button"
+        n1:background="@drawable/overlay_submit_button_selector"
+        n1:paddingLeft="3.0dip"
+        n1:paddingRight="3.0dip"
+        n1:layout_width="wrap_content"
+        n1:layout_height="30.0dip"
+        n1:text="@string/CommonUI_Controls_Action_Submit"
+        n1:textAllCaps="false" />
+</LinearLayout>

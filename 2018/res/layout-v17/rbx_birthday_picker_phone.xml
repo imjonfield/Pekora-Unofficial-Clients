@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="20.0sp"
+        n1:textColor="@color/RbxGray2"
+        n1:gravity="center_vertical"
+        n1:id="@id/rbxBirthdayText"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:text="@string/Authentication_SignUp_Label_Birthday"
+        n1:layout_weight="45.0" />
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/rbxBirthdayContainer"
+        n1:background="@drawable/rbx_bg_gender_full"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="55.0">
+        <RelativeLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="3.0">
+            <Spinner
+                n1:id="@id/rbxBirthdayMonthSpinner"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="3.0dip"
+                n1:popupBackground="@drawable/rbx_bg_spinner_outline"
+                n1:contentDescription="@string/Authentication_SignUp_Description_BirthdayMonthSpinnerContentDesc"
+                n1:dropDownVerticalOffset="0.100000024dip"
+                n1:spinnerMode="dropdown"
+                style="@style/Theme.Roblox.DefaultSpinner" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="3.0">
+            <View
+                n1:background="@color/RbxGray4"
+                n1:layout_width="1.0dip"
+                n1:layout_height="fill_parent" />
+            <Spinner
+                n1:id="@id/rbxBirthdayDaySpinner"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="3.0dip"
+                n1:popupBackground="@drawable/rbx_bg_spinner_outline"
+                n1:contentDescription="@string/Authentication_SignUp_Description_BirthdayDaySpinnerContentDesc"
+                n1:dropDownVerticalOffset="0.100000024dip"
+                n1:spinnerMode="dropdown"
+                style="@style/Theme.Roblox.DefaultSpinner" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="3.0">
+            <View
+                n1:background="@color/RbxGray4"
+                n1:layout_width="1.0dip"
+                n1:layout_height="fill_parent" />
+            <Spinner
+                n1:id="@id/rbxBirthdayYearSpinner"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="3.0dip"
+                n1:popupBackground="@drawable/rbx_bg_spinner_outline"
+                n1:contentDescription="@string/Authentication_SignUp_Description_BirthdayYearSpinnerContentDesc"
+                n1:dropDownVerticalOffset="0.100000024dip"
+                n1:spinnerMode="dropdown"
+                style="@style/Theme.Roblox.DefaultSpinner" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="25.0">
+        <com.roblox.client.components.RbxTextView
+            n1:textAppearance="?android:textAppearanceSmall"
+            n1:textSize="@dimen/rbxEditTextHint"
+            n1:textColor="@color/RbxRed2"
+            n1:id="@id/rbxBirthdayBottomText"
+            n1:background="@android:color/transparent"
+            n1:visibility="invisible"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="2.0dip"
+            n1:text="@string/Authentication_SignUp_Response_InvalidBirthday"
+            n1:layout_marginStart="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

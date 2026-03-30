@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:background="@color/RbxGray8"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.roblox.client.components.RbxTextView
+        n1:textSize="12.0sp"
+        n1:textStyle="bold"
+        n1:textColor="@color/RbxGray2"
+        n1:id="@id/contact_list_header_text_view"
+        n1:paddingLeft="24.0dip"
+        n1:paddingTop="10.0dip"
+        n1:paddingRight="22.0dip"
+        n1:paddingBottom="10.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:paddingStart="24.0dip"
+        n1:paddingEnd="22.0dip" />
+</LinearLayout>
