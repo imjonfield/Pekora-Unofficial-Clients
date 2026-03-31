@@ -1,8 +1,9 @@
 # Jonfield's Korone Apks
 <img width="1600" height="491" alt="logo" src="https://github.com/user-attachments/assets/c3f42a45-60c3-4ac2-acf0-7cd6b7bc092c" />
 
-[<img align="center" width="385" height="164" alt="discord server" src="https://github.com/user-attachments/assets/86b8223c-3b92-48df-8a62-ce841383cad3" />](https://discord.gg/Aqwwpd2BH2)
-[<img align="right" width="475" height="150" alt="download" src="https://github.com/user-attachments/assets/2b3ebced-72f0-4cef-9588-3bb134fc55ba" />](https://github.com/imjonfield/Pekora-Unofficial-Clients/releases)
+[<img width="1600" height="532" alt="Picsart_26-03-31_10-27-43-016" src="https://github.com/user-attachments/assets/0d27c8d0-a2d0-4c07-baa3-66ef83f2742a" />
+](https://discord.gg/Aqwwpd2BH2)[<img width="1600" height="535" alt="Picsart_26-03-31_10-30-00-822" src="https://github.com/user-attachments/assets/9f3d7579-bbb0-43cd-85bb-9b5087ef3a33" />
+](https://github.com/imjonfield/Pekora-Unofficial-Clients/releases)
 
 
  # NOTE
