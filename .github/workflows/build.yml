@@ -1,0 +1,93 @@
+name: Build All APKs with Apktool
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        version: [ "2017", "2018", "2020", "2021" ]
+      fail-fast: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Download and Setup Apktool
+        run: |
+          mkdir -p apktool_bin
+          curl -L https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -o apktool_bin/apktool.jar
+          echo '#!/bin/bash' > apktool_bin/apktool
+          echo 'exec java -Xmx3G -jar "$(dirname "$0")/apktool.jar" "$@"' >> apktool_bin/apktool
+          chmod +x apktool_bin/apktool
+          echo "$GITHUB_WORKSPACE/apktool_bin" >> $GITHUB_PATH
+
+      - name: Setup Android Framework for Apktool
+        run: |
+          apktool empty-framework-dir
+          echo "Framework cleared"
+
+      - name: Build APK for Version ${{ matrix.version }}
+        run: |
+          if [ ! -d "${{ matrix.version }}" ]; then
+            echo "Directory ${{ matrix.version }} not found. Creating it..."
+            mkdir -p "${{ matrix.version }}"
+          fi
+          
+          cd "${{ matrix.version }}"
+        
+          rm -f apktool.yml
+        
+          echo "version: 2.10.0" > apktool.yml
+          echo "apkFileName: Korone_${{ matrix.version }}.apk" >> apktool.yml
+          echo "isFrameworkApk: false" >> apktool.yml
+          echo "isSharedLibrary: false" >> apktool.yml
+          echo "sparseResources: false" >> apktool.yml
+          echo "compactEntries: false" >> apktool.yml
+          echo "compressionType: false" >> apktool.yml
+          echo "packageInfo:" >> apktool.yml
+          echo "  forcedPackageId: '127'" >> apktool.yml
+          echo "sdkInfo:" >> apktool.yml
+          echo "  minSdkVersion: '16'" >> apktool.yml
+          echo "  targetSdkVersion: '30'" >> apktool.yml
+          echo "usesFramework:" >> apktool.yml
+          echo "  ids:" >> apktool.yml
+          echo "  - 1" >> apktool.yml
+          echo "doNotCompress:" >> apktool.yml
+          echo "- resources.arsc" >> apktool.yml
+          echo "- png" >> apktool.yml
+          echo "- jpg" >> apktool.yml
+          echo "- assets/fingerprint.txt" >> apktool.yml
+        
+          rm -f apktool.json
+        
+          cd ..
+          
+          mkdir -p out_artifacts
+          apktool b "${{ matrix.version }}" -o "out_artifacts/Korone_${{ matrix.version }}.apk"
+
+      - name: Upload Unsigned APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Korone-${{ matrix.version }}-Unsigned-APK
+          path: out_artifacts/Korone_${{ matrix.version }}.apk
+
+      - name: Upload Build Artifacts for Release
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-${{ matrix.version }}
+          path: out_artifacts/
+          if-no-files-found: error
